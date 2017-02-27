@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="presenter"
+            type="com.innofang.databingdemo.AnimationActivity.Presenter"/>
+
+        <variable
+            name="showImage"
+            type="boolean"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/activity_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@null"
+            android:src="@drawable/default_avatar"
+            android:visibility="@{showImage ? View.VISIBLE : View.GONE}"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onCheckedChanged="@{presenter.onCheckedChanged}"
+            android:text="@string/show_image"/>
+    </LinearLayout>
+</layout>
+

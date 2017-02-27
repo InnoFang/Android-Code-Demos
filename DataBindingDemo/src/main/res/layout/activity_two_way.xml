@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="model"
+            type="com.innofang.databingdemo.FormModel"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/activity_two_way"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:text="@={model.name}"
+            android:layout_width="match_parent"
+            android:inputType="textNoSuggestions"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:text="@={model.password}"/>
+
+        <Button
+            android:text="@{@string/welcome(model.name)}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</layout>

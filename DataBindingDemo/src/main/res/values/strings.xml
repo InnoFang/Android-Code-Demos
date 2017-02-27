@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DataBingDemo</string>
+    <string name="go_to_main">Go to Main</string>
+    <string name="go_to_list">Go to List</string>
+    <string name="add_item">Add Item</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="go_to_expression">Go to Expression</string>
+    <string name="welcome">hello %s</string>
+    <string name="go_to_two_way">Go to Two Way</string>
+    <string name="go_to_lambda">Go to Lambda</string>
+    <string name="go_to_animation">Go to Animation</string>
+    <string name="show_image">Show Image</string>
+
+</resources>

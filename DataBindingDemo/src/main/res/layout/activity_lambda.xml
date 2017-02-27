@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.innofang.databingdemo.LambdaActivity.Presenter"/>
+
+        <variable
+            name="employee"
+            type="com.innofang.databingdemo.Employee"/>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/activity_lambda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:onClick="@{() -> presenter.onEmployeeClick(employee)}"
+            android:layout_width="match_parent"
+            android:text="@{employee.firstName}"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:onFocusChange="@{(v, fcs) -> presenter.onFocusChange(employee)}"
+            android:layout_width="match_parent"
+            android:text="@{employee.lastName}"
+            android:onClick="@{(v) -> presenter.onEmployeeLongClick(employee)}"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</layout>

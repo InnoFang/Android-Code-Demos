@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        ui中的数据绑定都是在data标签中,data中会有一个叫variable的标签
+        variable含有两个标签
+    -->
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="employee"
+            type="com.innofang.databingdemo.Employee"/>
+
+        <variable
+            name="presenter"
+            type="com.innofang.databingdemo.MainActivity.Presenter"/>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.innofang.databingdemo.MainActivity">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Input First Name"
+            android:inputType="text"
+            android:onTextChanged="@{presenter.onTextChanged}"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Input Last Name"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="@{presenter.onClick}"
+            android:text="@{employee.firstName}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="@{() -> presenter.onClickListenerBinding(employee)}"
+            android:text="@{employee.lastName}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="@{employee.isFired ? View.GONE : View.VISIBLE}"
+            android:text="@{String.valueOf(1 + 2)}"
+            android:onClick="@{() -> presenter.onClickListenerBinding(employee)}"/>
+
+    </LinearLayout>
+</layout>
