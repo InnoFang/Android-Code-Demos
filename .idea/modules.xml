@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Android-Code.iml" filepath="$PROJECT_DIR$/Android-Code.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataBindingDemo/DataBindingDemo.iml" filepath="$PROJECT_DIR$/DataBindingDemo/DataBindingDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MVPDemo/MVPDemo.iml" filepath="$PROJECT_DIR$/MVPDemo/MVPDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SQLIteQueryDemo/SQLIteQueryDemo.iml" filepath="$PROJECT_DIR$/SQLIteQueryDemo/SQLIteQueryDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SQLiteAdapterDemo/SQLiteAdapterDemo.iml" filepath="$PROJECT_DIR$/SQLiteAdapterDemo/SQLiteAdapterDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

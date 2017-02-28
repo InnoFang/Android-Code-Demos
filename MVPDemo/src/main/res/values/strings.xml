@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVPTest</string>
+    <string name="sign_in_success">登录成功</string>
+    <string name="sign_in_fail">登录失败</string>
+</resources>

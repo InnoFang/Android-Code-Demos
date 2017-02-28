@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.innofang.sqliteadapterdemo.MainActivity">
+
+    <Button
+        android:id="@+id/create_and_insert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_and_insert"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/query_and_show_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/query_and_show"
+        android:textAllCaps="false"/>
+
+    <LinearLayout
+        android:id="@+id/db_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+        <TextView
+            style="@style/DbTitleStyle"
+            android:text="Id"/>
+
+        <TextView
+            style="@style/DbTitleStyle"
+            android:text="Name"/>
+
+        <TextView
+            style="@style/DbTitleStyle"
+            android:text="Age"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/show_db_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

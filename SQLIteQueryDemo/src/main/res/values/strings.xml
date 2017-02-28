@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SQLIteQueryDemo</string>
+    <string name="create_and_insert">Create and Insert</string>
+    <string name="query">Query</string>
+</resources>

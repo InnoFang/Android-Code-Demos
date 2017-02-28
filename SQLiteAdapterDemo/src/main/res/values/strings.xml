@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SQLiteAdapterDemo</string>
+    <string name="create_and_insert">Create and Insert</string>
+    <string name="query_and_show">Query and Show</string>
+</resources>
