@@ -1,1 +1,1 @@
-include ':app', ':DataBindingDemo'
+include ':app', ':DataBindingDemo', ':MVPDemo'
