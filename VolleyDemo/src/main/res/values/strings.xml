@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VolleyDemo</string>
+    <string name="title_text_view_province">省份</string>
+    <string name="title_text_view_city">城市</string>
+    <string name="title_text_view_area_code">区号</string>
+    <string name="title_text_view_zip">邮编</string>
+    <string name="title_text_view_company">公司</string>
+    <string name="edit_text_input_phone_number">输入手机号</string>
+    <string name="button_text_query">查询</string>
+</resources>
