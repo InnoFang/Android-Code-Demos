@@ -1,1 +1,1 @@
-include ':app', ':DataBindingDemo', ':MVPDemo', ':SQLIteQueryDemo', ':SQLiteAdapterDemo'
+include ':app', ':DataBindingDemo', ':MVPDemo', ':SQLIteQueryDemo', ':SQLiteAdapterDemo', ':VolleyDemo'
