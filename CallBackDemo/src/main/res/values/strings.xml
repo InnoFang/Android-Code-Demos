@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CallBackDemo</string>
+    <string name="call_back_demo_1">回调案例一： \n给RecyclerView的item添加点击事件</string>
+    <string name="call_back_demo_2">回调案例二： \n异步加载图片资源</string>
+</resources>
