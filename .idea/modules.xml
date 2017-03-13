@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android-Code.iml" filepath="$PROJECT_DIR$/Android-Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BezierDemo/BezierDemo.iml" filepath="$PROJECT_DIR$/BezierDemo/BezierDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/CallBackDemo/CallBackDemo.iml" filepath="$PROJECT_DIR$/CallBackDemo/CallBackDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataBindingDemo/DataBindingDemo.iml" filepath="$PROJECT_DIR$/DataBindingDemo/DataBindingDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MVPDemo/MVPDemo.iml" filepath="$PROJECT_DIR$/MVPDemo/MVPDemo.iml" />
