@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BezierTest</string>
+    <string name="second_bezier_test">Second Bezier Test</string>
+    <string name="third_bezier_test">Third Bezier TEst</string>
+    <string name="draw_pad_bezier_test">Draw Pad Bezier Test</string>
+    <string name="path_morphing_bezier_test">Path Morthing Bezier Test</string>
+    <string name="wave_bezier_test">Wave Bezier Test</string>
+    <string name="path_bezier_test">Path Bezier Test</string>
+</resources>
