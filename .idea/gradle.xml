@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/CallBackDemo" />
             <option value="$PROJECT_DIR$/DataBindingDemo" />
             <option value="$PROJECT_DIR$/MVPDemo" />
+            <option value="$PROJECT_DIR$/RecyclerViewDemo" />
             <option value="$PROJECT_DIR$/SQLIteQueryDemo" />
             <option value="$PROJECT_DIR$/SQLiteAdapterDemo" />
             <option value="$PROJECT_DIR$/VolleyDemo" />
