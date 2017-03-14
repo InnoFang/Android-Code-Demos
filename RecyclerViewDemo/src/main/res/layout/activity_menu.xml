@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/mixture_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onGotoMixture"
+        android:text="@string/mixture_recycler_view"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/linear_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onGotoLinear"
+        android:text="@string/linear_recycler_view"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/grid_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onGotoGrid"
+        android:text="@string/grid_recycler_view"
+        android:textAllCaps="false"/>
+</LinearLayout>
