@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/RecyclerViewDemo/RecyclerViewDemo.iml" filepath="$PROJECT_DIR$/RecyclerViewDemo/RecyclerViewDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLIteQueryDemo/SQLIteQueryDemo.iml" filepath="$PROJECT_DIR$/SQLIteQueryDemo/SQLIteQueryDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLiteAdapterDemo/SQLiteAdapterDemo.iml" filepath="$PROJECT_DIR$/SQLiteAdapterDemo/SQLiteAdapterDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwipeBottomNavigationDemo/SwipeBottomNavigationDemo.iml" filepath="$PROJECT_DIR$/SwipeBottomNavigationDemo/SwipeBottomNavigationDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/VolleyDemo/VolleyDemo.iml" filepath="$PROJECT_DIR$/VolleyDemo/VolleyDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

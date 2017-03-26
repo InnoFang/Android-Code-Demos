@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/RecyclerViewDemo" />
             <option value="$PROJECT_DIR$/SQLIteQueryDemo" />
             <option value="$PROJECT_DIR$/SQLiteAdapterDemo" />
+            <option value="$PROJECT_DIR$/SwipeBottomNavigationDemo" />
             <option value="$PROJECT_DIR$/VolleyDemo" />
             <option value="$PROJECT_DIR$/app" />
           </set>
