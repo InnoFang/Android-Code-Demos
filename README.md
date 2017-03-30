@@ -46,3 +46,8 @@ This is my Android Learning Demo
 + [RecyclerViewDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/RecyclerViewDemo)
 
   In this demo, it demonstrates the correct way to set up a listener for RecyclerView and demonstrates the basic usage of ItemTouchHelper
+  
+  
+## LICENSE
+
+ [Apache License 2.0](https://github.com/InnoFang/Android-Code-Demos/blob/master/LICENSE)
