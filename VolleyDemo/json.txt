@@ -1,0 +1,13 @@
+{
+    "resultcode": "200", 
+    "reason": "Return Successd!", 
+    "result": {
+        "province": "’„Ω≠", 
+        "city": "∫º÷›", 
+        "areacode": "0571", 
+        "zip": "310000", 
+        "company": "“∆∂Ø", 
+        "card": ""
+    }, 
+    "error_code": 0
+}
