@@ -1,1 +1,0 @@
-include ':app', ':DataBindingDemo', ':MVPDemo', ':SQLIteQueryDemo', ':SQLiteAdapterDemo', ':VolleyDemo', ':CallBackDemo', ':BezierDemo', ':RecyclerViewDemo', ':SwipeBottomNavigationDemo'
