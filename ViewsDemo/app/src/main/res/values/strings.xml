@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ViewsDemo</string>
+    <string name="square_scaler_view">SquareScalerView</string>
+    <string name="circle_rotater_view">CircleRotaterView</string>
+    <string name="sketch">sketch</string>
+    <string name="bezier2view">Bezier2View</string>
+    <string name="bezier3view">Bezier3View</string>
+    <string name="control_1">控制点1</string>
+    <string name="control_2">控制点2</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.innofang.viewsdemo.views.Bezier3View
+        android:id="@+id/bezier_3_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/control_1"
+            android:text="@string/control_1"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/control_2"
+            android:text="@string/control_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+</LinearLayout>

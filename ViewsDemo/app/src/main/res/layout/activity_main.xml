@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.innofang.viewsdemo.MainActivity">
+
+   <!-- <com.innofang.viewsdemo.views.SquareScalerView
+        android:id="@+id/square_scaler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+   <!-- <com.innofang.viewsdemo.views.CircleRotaterView
+        android:id="@+id/circle_rotater"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+   <!-- <com.innofang.viewsdemo.views.Sketch
+        android:id="@+id/sketch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <com.innofang.viewsdemo.views.Bezier2View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

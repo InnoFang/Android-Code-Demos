@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/square_scaler_view"
+        android:title="@string/square_scaler_view"
+        />
+
+    <item
+        android:id="@+id/circle_rotater_view"
+        android:title="@string/circle_rotater_view"
+        />
+
+    <item
+        android:id="@+id/sketch"
+        android:title="@string/sketch"
+        />
+
+    <item
+        android:id="@+id/bezier_2_view"
+        android:title="@string/bezier2view"
+        />
+
+    <item
+        android:id="@+id/bezier_3_view"
+        android:title="@string/bezier3view"
+        />
+</menu>
