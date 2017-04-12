@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.innofang.viewsdemo.views.BezierHeartView
+        android:id="@+id/bezier_heart_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+
+    <CheckBox
+        android:id="@+id/show_coordinate_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_coordinate_system"/>
+
+    <CheckBox
+        android:id="@+id/show_auxiliary_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_auxiliary_line"/>
+
+   <!-- <Button
+        android:id="@+id/show_again_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/show_again"
+        android:textAllCaps="false"/>-->
+</LinearLayout>

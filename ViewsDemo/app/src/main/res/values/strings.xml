@@ -7,4 +7,8 @@
     <string name="bezier3view">Bezier3View</string>
     <string name="control_1">控制点1</string>
     <string name="control_2">控制点2</string>
+    <string name="bezier_heart_view">BeizerHeartView</string>
+    <string name="show_coordinate_system">Show Coordinate System</string>
+    <string name="show_auxiliary_line">Show Auxiliary Line</string>
+    <string name="show_again">Show Again</string>
 </resources>

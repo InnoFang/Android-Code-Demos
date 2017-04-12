@@ -4,10 +4,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 
 import com.innofang.viewsdemo.views.Bezier3View;
+import com.innofang.viewsdemo.views.BezierHeartView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
-        setBezier3View();
+//        setBezier3View();
+        setBezierHeartView();
     }
 
     @Override
@@ -42,8 +45,36 @@ public class MainActivity extends AppCompatActivity {
             case R.id.bezier_3_view:
                 setBezier3View();
                 break;
+            case R.id.bezier_heart_view:
+                setBezierHeartView();
+                break;
+            default:
+                break;
         }
         return true;
+    }
+
+    private void setBezierHeartView() {
+        setContentView(R.layout.view_bezier_heart);
+        final BezierHeartView bezierHeartView = (BezierHeartView) findViewById(R.id.bezier_heart_view);
+        ((CheckBox)findViewById(R.id.show_coordinate_system)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                bezierHeartView.setShowCoordinateSystem(isChecked);
+            }
+        });
+        ((CheckBox) findViewById(R.id.show_auxiliary_line)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                bezierHeartView.setShowAuxiliaryLine(isChecked);
+            }
+        });
+       /* findViewById(R.id.show_again_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });*/
     }
 
     private void setBezier3View() {

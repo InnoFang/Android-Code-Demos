@@ -25,4 +25,8 @@
         android:id="@+id/bezier_3_view"
         android:title="@string/bezier3view"
         />
+
+    <item
+        android:id="@+id/bezier_heart_view"
+        android:title="@string/bezier_heart_view"/>
 </menu>
