@@ -24,26 +24,13 @@ This is my Android Learning Demo
       * VolleyRequest.java
 
 2. If you want to see the implementation of phone number attribution querying application, you can see the other files in those packages  
-
-<<<<<<< HEAD
-  ```
-  * app
-  * bean
-  * constant
-  * model
-  * presenter
-  * util
-  * view
-  ```
-=======
-     * app
-     * bean
-     * constant
-     * model
-     * presenter
-     * util
-     * view
->>>>>>> 1b3915270b06642ddaad90c911ceda0d51e10bbc
+    * app
+    * bean
+    * constant
+    * model
+    * presenter
+    * util
+    * view
 
 + [CallBackDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CallBackDemo)  
 
