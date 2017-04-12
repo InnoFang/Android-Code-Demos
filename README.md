@@ -25,13 +25,13 @@ This is my Android Learning Demo
 
 2. If you want to see the implementation of phone number attribution querying application, you can see the other files in those packages  
 
-       * app
-       * bean
-       * constant
-       * model
-       * presenter
-       * util
-       * view
+     * app
+     * bean
+     * constant
+     * model
+     * presenter
+     * util
+     * view
 
 + [CallBackDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CallBackDemo)  
 
