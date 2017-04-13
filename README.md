@@ -51,7 +51,12 @@ This is my Android Learning Demo
 
 + [SwipeBottomNavigationDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/SwipeBottomNavigationDemo)
 
-     Combine with the _ViewPager_  and the _BottomNavigationView_ , and use the reflection to change the _ChangeMode_
+  Combine with the _ViewPager_  and the _BottomNavigationView_ , and use the reflection to change the _ChangeMode_
+     
++ [ViewsDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ViewsDemo)
+
+  This demo is the practice of custom view.
+   
 ## LICENSE
 
  [Apache License 2.0](https://github.com/InnoFang/Android-Code-Demos/blob/master/LICENSE)
