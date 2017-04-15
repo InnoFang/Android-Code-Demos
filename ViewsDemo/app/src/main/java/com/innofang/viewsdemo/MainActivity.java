@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_arrow);
+        setContentView(R.layout.view_matrix_set_poly_to_poly);
 //        setBezier3View();
 //        setBezierHeartView();
     }
@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.arrow_view:
                 setContentView(R.layout.view_arrow);
                 break;
+            case R.id.matrix_set_poly_to_poly_view:
+                setContentView(R.layout.view_matrix_set_poly_to_poly);
             default:
                 break;
         }

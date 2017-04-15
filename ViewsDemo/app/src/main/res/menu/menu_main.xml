@@ -33,4 +33,8 @@
     <item
         android:id="@+id/arrow_view"
         android:title="@string/arrow_view"/>
+
+    <item
+        android:id="@+id/matrix_set_poly_to_poly_view"
+        android:title="MatrixSetPolyToPolyView"/>
 </menu>
