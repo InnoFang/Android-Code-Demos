@@ -4,21 +4,24 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 
 import com.innofang.viewsdemo.views.Bezier3View;
 import com.innofang.viewsdemo.views.BezierHeartView;
+import com.innofang.viewsdemo.views.PolyToPolyView;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_matrix_set_poly_to_poly);
+//        setContentView(R.layout.view_matrix_set_poly_to_poly);
 //        setBezier3View();
 //        setBezierHeartView();
+        setPolyToPolyView();
     }
 
     @Override
@@ -53,16 +56,55 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.matrix_set_poly_to_poly_view:
                 setContentView(R.layout.view_matrix_set_poly_to_poly);
+                break;
+            case R.id.poly_to_poly_view:
+                setPolyToPolyView();
+                break;
             default:
                 break;
         }
         return true;
     }
 
+    private void setPolyToPolyView() {
+        setContentView(R.layout.view_poly_to_poly);
+        final PolyToPolyView polyToPolyView = (PolyToPolyView) findViewById(R.id.poly_to_poly_view);
+        ((RadioButton) findViewById(R.id.point_zero)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                polyToPolyView.setPointCount(0);
+            }
+        });
+        ((RadioButton) findViewById(R.id.point_one)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                polyToPolyView.setPointCount(1);
+            }
+        });
+        ((RadioButton) findViewById(R.id.point_two)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                polyToPolyView.setPointCount(2);
+            }
+        });
+        ((RadioButton) findViewById(R.id.point_three)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                polyToPolyView.setPointCount(3);
+            }
+        });
+        ((RadioButton) findViewById(R.id.point_four)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                polyToPolyView.setPointCount(4);
+            }
+        });
+    }
+
     private void setBezierHeartView() {
         setContentView(R.layout.view_bezier_heart);
         final BezierHeartView bezierHeartView = (BezierHeartView) findViewById(R.id.bezier_heart_view);
-        ((CheckBox)findViewById(R.id.show_coordinate_system)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ((CheckBox) findViewById(R.id.show_coordinate_system)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 bezierHeartView.setShowCoordinateSystem(isChecked);
@@ -85,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
     private void setBezier3View() {
         setContentView(R.layout.view_bezier_3);
         final Bezier3View bezier3View = (Bezier3View) findViewById(R.id.bezier_3_view);
-        ((RadioButton)findViewById(R.id.control_1)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        ((RadioButton) findViewById(R.id.control_1)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 bezier3View.setMode(isChecked);

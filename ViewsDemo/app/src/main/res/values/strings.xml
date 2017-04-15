@@ -12,4 +12,11 @@
     <string name="show_auxiliary_line">Show Auxiliary Line</string>
     <string name="show_again">Show Again</string>
     <string name="arrow_view">ArrowView</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="matrix_set_poly_to_poly_view">MatrixSetPolyToPolyView</string>
+    <string name="poly_to_poly_view">PolyToPolyView</string>
+    <string name="zero">0</string>
 </resources>

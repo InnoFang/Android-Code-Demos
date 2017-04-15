@@ -36,5 +36,10 @@
 
     <item
         android:id="@+id/matrix_set_poly_to_poly_view"
-        android:title="MatrixSetPolyToPolyView"/>
+        android:title="@string/matrix_set_poly_to_poly_view"/>
+
+    <item
+        android:id="@+id/poly_to_poly_view"
+        android:title="@string/poly_to_poly_view"/>
+
 </menu>
