@@ -11,4 +11,5 @@
     <string name="show_coordinate_system">Show Coordinate System</string>
     <string name="show_auxiliary_line">Show Auxiliary Line</string>
     <string name="show_again">Show Again</string>
+    <string name="arrow_view">ArrowView</string>
 </resources>

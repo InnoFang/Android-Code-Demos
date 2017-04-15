@@ -29,4 +29,8 @@
     <item
         android:id="@+id/bezier_heart_view"
         android:title="@string/bezier_heart_view"/>
+
+    <item
+        android:id="@+id/arrow_view"
+        android:title="@string/arrow_view"/>
 </menu>

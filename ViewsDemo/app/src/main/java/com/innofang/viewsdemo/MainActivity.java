@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.view_arrow);
 //        setBezier3View();
-        setBezierHeartView();
+//        setBezierHeartView();
     }
 
     @Override
@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.bezier_heart_view:
                 setBezierHeartView();
+                break;
+            case R.id.arrow_view:
+                setContentView(R.layout.view_arrow);
                 break;
             default:
                 break;
