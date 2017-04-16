@@ -42,4 +42,11 @@
         android:id="@+id/poly_to_poly_view"
         android:title="@string/poly_to_poly_view"/>
 
+    <item
+        android:id="@+id/rotate_3d_image_view"
+        android:title="@string/rotate_3d"/>
+
+    <item
+        android:id="@+id/region_click_view"
+        android:title="@string/region_click_view"/>
 </menu>

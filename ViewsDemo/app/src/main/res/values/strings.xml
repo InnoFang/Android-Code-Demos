@@ -19,4 +19,6 @@
     <string name="matrix_set_poly_to_poly_view">MatrixSetPolyToPolyView</string>
     <string name="poly_to_poly_view">PolyToPolyView</string>
     <string name="zero">0</string>
+    <string name="rotate_3d">rotate_3d</string>
+    <string name="region_click_view">RegionClickView</string>
 </resources>
