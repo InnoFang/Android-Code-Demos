@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NDKDemo</string>
+    <string name="result">Result</string>
+    <string name="plus">+</string>
 </resources>

@@ -9,6 +9,10 @@ package com.innofang.ndkdemo;
 
 public class JniUtil {
 
+    static {
+        System.loadLibrary("app");
+    }
+
     public native int add (int a, int b);
 
 }
