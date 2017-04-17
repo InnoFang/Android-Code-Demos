@@ -15,6 +15,7 @@
        <EditText
            android:id="@+id/number_a"
            android:inputType="number"
+           android:gravity="center"
            android:layout_width="100dp"
            android:layout_height="wrap_content"/>
        <TextView
@@ -30,6 +31,7 @@
            android:layout_toEndOf="@id/plus"
            android:id="@+id/number_b"
            android:inputType="number"
+           android:gravity="center"
            android:layout_width="100dp"
            android:layout_height="wrap_content"/>
    </RelativeLayout>
