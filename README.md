@@ -56,6 +56,10 @@ This is my Android Learning Demo
 + [ViewsDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ViewsDemo)
 
   This demo is the practice of custom view.
+  
++ [NDKDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/NDKDemo)
+
+  Show the basic usage of NDK.
    
 ## LICENSE
 
