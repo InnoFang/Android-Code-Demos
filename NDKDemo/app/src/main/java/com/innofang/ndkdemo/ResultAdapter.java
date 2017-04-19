@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Author: Inno Fang
  * Time: 2017/4/19 18:45
- * Description:
+ * Description: RecyclerView适配器
  */
 
 

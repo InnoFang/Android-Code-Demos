@@ -3,7 +3,7 @@ package com.innofang.ndkdemo;
 /**
  * Author: Inno Fang
  * Time: 2017/4/16 21:55
- * Description:
+ * Description: 本地方法工具类
  */
 
 

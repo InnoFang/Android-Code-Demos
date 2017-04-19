@@ -12,6 +12,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Locale;
 
+/**
+ * 利用本地方法计算两数的加、减、乘、除，并以列表的形式展现，具体调用请看<code>resetResult()</code>方法
+ */
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView mResultRecyclerView;
@@ -22,12 +25,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         final EditText numberA = (EditText) findViewById(R.id.number_a_edit_text);
         final EditText numberB = (EditText) findViewById(R.id.number_b_edit_text);
         mResultRecyclerView = (RecyclerView) findViewById(R.id.result_recycler_view);
         mAdapter = new ResultAdapter(this, new ArrayList<String>());
         mResultRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mResultRecyclerView.setAdapter(mAdapter);
+
+        /* Button的点击事件 */
         findViewById(R.id.result_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void resetResults(int a, int b) {
         ArrayList<String> result = new ArrayList<>();
+        /* 使用本地方法 */
         result.add(String.format(Locale.CHINA, "%d + %d = %d", a, b, jniUtil.add(a, b)));
         result.add(String.format(Locale.CHINA, "%d - %d = %d", a, b, jniUtil.sub(a, b)));
         result.add(String.format(Locale.CHINA, "%d * %d = %d", a, b, jniUtil.mul(a, b)));
