@@ -20,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.view_matrix_set_poly_to_poly);
+        setContentView(R.layout.view_clock);
 //        setBezier3View();
 //        setBezierHeartView();
-        setPolyToPolyView();
+//        setPolyToPolyView();
     }
 
     @Override
@@ -92,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
                         v.startAnimation(rotation);     /*开始动画*/
                     }
                 });
+                break;
+            case R.id.clock_view:
+                setContentView(R.layout.view_clock);
                 break;
             default:
                 break;

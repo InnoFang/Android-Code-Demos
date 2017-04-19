@@ -49,4 +49,8 @@
     <item
         android:id="@+id/region_click_view"
         android:title="@string/region_click_view"/>
+
+    <item
+        android:id="@+id/clock_view"
+        android:title="@string/clock_view"/>
 </menu>

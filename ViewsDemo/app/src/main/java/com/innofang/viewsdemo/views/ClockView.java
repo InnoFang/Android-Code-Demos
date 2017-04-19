@@ -6,7 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceHolder;
-import android.view.SurfaceView;
+import android.view.View;
 
 /**
  * Author: Inno Fang
@@ -15,7 +15,7 @@ import android.view.SurfaceView;
  */
 
 
-public class ClockView extends SurfaceView
+public class ClockView extends View
         implements SurfaceHolder.Callback, Runnable {
 
     private Paint mArcPaint = new Paint();
@@ -23,8 +23,8 @@ public class ClockView extends SurfaceView
     private int mHeight, mWidth;
     private boolean mDrawing = true;
     private SurfaceHolder mSurfaceHolder;
-    private float mDailRadius = 200F;
-    private float len = 10F;
+    private float mDailRadius = 400F;
+    private float len = 20F;
 
     public ClockView(Context context) {
         this(context, null);
@@ -32,25 +32,25 @@ public class ClockView extends SurfaceView
 
     public ClockView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mArcPaint.setStrokeWidth(5);
+        mArcPaint.setStrokeWidth(10);
         mArcPaint.setStyle(Paint.Style.STROKE);
         mArcPaint.setAntiAlias(true);
         mArcPaint.setColor(Color.BLACK);
-        mTextPaint.setTextSize(10);
-        mSurfaceHolder = getHolder();
+        mTextPaint.setTextSize(50);
+//        mSurfaceHolder = getHolder();
     }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        mHeight = h / 2;
-        mWidth = w / 2;
+        mHeight = h;
+        mWidth = w;
     }
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
         mDrawing = true;
-        new Thread(this).start();
+//        new Thread(this).start();
     }
 
     @Override
@@ -67,7 +67,6 @@ public class ClockView extends SurfaceView
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.translate(mWidth / 2, mHeight / 2);
-        canvas.scale(1, -1);
         drawDial(canvas);
     }
 
@@ -84,8 +83,8 @@ public class ClockView extends SurfaceView
         canvas.save();
         int timeIndex = 1;
         String timeText;
-        for (int i = 0; i < 360; i += 10) {
-            if (i % 50 == 0) {
+        for (int i = 0; i < 360; i += 6) {
+            if (i % 30 == 0) {
                 if (i == 0) {
                     timeText = "12";
                 } else {
@@ -93,9 +92,13 @@ public class ClockView extends SurfaceView
                 }
                 mArcPaint.setColor(Color.RED);
                 mTextPaint.setColor(Color.BLACK);
-                canvas.drawLine(0, mDailRadius, 0, mDailRadius + 2 * len, mArcPaint);
-//                canvas.drawText(timeText, );
+                canvas.drawLine(0, -mDailRadius, 0, -(mDailRadius + 2 * len), mArcPaint);
+                canvas.drawText(timeText, -15 /*让数子尽量居中*/, -(mDailRadius + len * 5 / 2), mTextPaint);
+            } else {
+                mArcPaint.setColor(Color.GREEN);
+                canvas.drawLine(0, -mDailRadius, 0, -(mDailRadius + len), mArcPaint);
             }
+            canvas.rotate(6);
         }
         canvas.restore();
     }
