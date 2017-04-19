@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final JniUtil jniUtil = new JniUtil();
-        final EditText numberA = (EditText) findViewById(R.id.number_a);
-        final EditText numberB = (EditText) findViewById(R.id.number_b);
-        findViewById(R.id.result).setOnClickListener(new View.OnClickListener() {
+        final EditText numberA = (EditText) findViewById(R.id.number_a_edit_text);
+        final EditText numberB = (EditText) findViewById(R.id.number_b_edit_text);
+        findViewById(R.id.result_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String a = numberA.getText().toString();
