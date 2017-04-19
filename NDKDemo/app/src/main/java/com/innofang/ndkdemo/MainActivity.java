@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     private void resetResults(int a, int b) {
         ArrayList<String> result = new ArrayList<>();
         result.add(String.format(Locale.CHINA, "%d + %d = %d", a, b, jniUtil.add(a, b)));
-        result.add(String.format(Locale.CHINA, "%d + %d = %d", a, b, jniUtil.sub(a, b)));
+        result.add(String.format(Locale.CHINA, "%d - %d = %d", a, b, jniUtil.sub(a, b)));
         result.add(String.format(Locale.CHINA, "%d * %d = %d", a, b, jniUtil.mul(a, b)));
         result.add(String.format(Locale.CHINA, "%d / %d = %f", a, b, jniUtil.div(a, b)));
         mAdapter.setResultList(result);
