@@ -44,12 +44,12 @@ public class ClockView extends SurfaceView
 
     public ClockView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mArcPaint.setStrokeWidth(10);
+        mArcPaint.setStrokeWidth(8);
         mArcPaint.setStyle(Paint.Style.STROKE);
         mArcPaint.setAntiAlias(true);
         mArcPaint.setColor(Color.BLACK);
 
-        mPointerPaint.setStrokeWidth(10);
+        mPointerPaint.setStrokeWidth(5);
         mPointerPaint.setStyle(Paint.Style.STROKE);
         mPointerPaint.setAntiAlias(true);
 
@@ -73,6 +73,12 @@ public class ClockView extends SurfaceView
         super.onSizeChanged(w, h, oldw, oldh);
         mHeight = h;
         mWidth = w;
+
+        mDialRadius = Math.min(mWidth, mHeight) / 2 - 100;
+        mLen = 20F;
+        mSecondsPointerLen = mDialRadius - 100;
+        mMinutesPointerLen = mSecondsPointerLen - 50;
+        mHourPointerLen = mMinutesPointerLen - 50;
     }
 
     @Override
