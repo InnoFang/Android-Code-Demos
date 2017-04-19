@@ -76,9 +76,9 @@ public class ClockView extends SurfaceView
 
         mDialRadius = Math.min(mWidth, mHeight) / 2 - 100;
         mLen = 20F;
-        mSecondsPointerLen = mDialRadius - 100;
+        mSecondsPointerLen = mDialRadius - 70;
         mMinutesPointerLen = mSecondsPointerLen - 50;
-        mHourPointerLen = mMinutesPointerLen - 50;
+        mHourPointerLen = mMinutesPointerLen - 40;
     }
 
     @Override
@@ -101,17 +101,21 @@ public class ClockView extends SurfaceView
     public void run() {
         while (mDrawing) {
             Canvas canvas = mSurfaceHolder.lockCanvas();
-            if (null == mBitmapCache) {
-                mBitmapCache = Bitmap.createBitmap(canvas.getWidth(),
-                        canvas.getHeight(),
-                        Bitmap.Config.ARGB_4444);
+            try {
+                if (null == mBitmapCache) {
+                    mBitmapCache = Bitmap.createBitmap(canvas.getWidth(),
+                            canvas.getHeight(),
+                            Bitmap.Config.ARGB_4444);
+                }
+                Canvas canvas1 = new Canvas(mBitmapCache);
+                canvas1.drawColor(Color.WHITE);
+                canvas1.translate(mWidth / 2, mHeight / 2);
+                drawCanvas(canvas1);
+                canvas.drawBitmap(mBitmapCache, 0, 0, mPaint);
+                mSurfaceHolder.unlockCanvasAndPost(canvas);
+            } catch (Exception e) {
+
             }
-            Canvas canvas1 = new Canvas(mBitmapCache);
-            canvas1.drawColor(Color.WHITE);
-            canvas1.translate(mWidth / 2, mHeight / 2);
-            drawCanvas(canvas1);
-            canvas.drawBitmap(mBitmapCache, 0, 0, mPaint);
-            mSurfaceHolder.unlockCanvasAndPost(canvas);
         }
     }
 
@@ -178,7 +182,7 @@ public class ClockView extends SurfaceView
                 mArcPaint.setColor(Color.RED);
                 mTextPaint.setColor(Color.BLACK);
                 canvas.drawLine(0, -mDialRadius, 0, -(mDialRadius + 2 * mLen), mArcPaint);
-                canvas.drawText(timeText, -15 /*让数字尽量居中*/, -(mDialRadius + mLen * 5 / 2), mTextPaint);
+                canvas.drawText(timeText, -10 /*让数字尽量居中*/, -(mDialRadius + mLen * 5 / 2), mTextPaint);
             } else {
                 mArcPaint.setColor(Color.GREEN);
                 canvas.drawLine(0, -mDialRadius, 0, -(mDialRadius + mLen), mArcPaint);
