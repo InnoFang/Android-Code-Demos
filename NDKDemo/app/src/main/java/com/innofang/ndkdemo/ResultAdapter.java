@@ -28,6 +28,7 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ViewHolder
 
     public void setResultList(List<String> resultList) {
         mResultList = resultList;
+        notifyDataSetChanged();
     }
 
     @Override

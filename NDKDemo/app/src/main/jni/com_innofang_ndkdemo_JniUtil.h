@@ -15,6 +15,30 @@ extern "C" {
 JNIEXPORT jint JNICALL Java_com_innofang_ndkdemo_JniUtil_add
   (JNIEnv *, jobject, jint, jint);
 
+/*
+ * Class:     com_innofang_ndkdemo_JniUtil
+ * Method:    sub
+ * Signature: (II)I
+ */
+JNIEXPORT jint JNICALL Java_com_innofang_ndkdemo_JniUtil_sub
+  (JNIEnv *, jobject, jint, jint);
+
+/*
+ * Class:     com_innofang_ndkdemo_JniUtil
+ * Method:    mul
+ * Signature: (II)I
+ */
+JNIEXPORT jint JNICALL Java_com_innofang_ndkdemo_JniUtil_mul
+  (JNIEnv *, jobject, jint, jint);
+
+/*
+ * Class:     com_innofang_ndkdemo_JniUtil
+ * Method:    div
+ * Signature: (II)D
+ */
+JNIEXPORT jdouble JNICALL Java_com_innofang_ndkdemo_JniUtil_div
+  (JNIEnv *, jobject, jint, jint);
+
 #ifdef __cplusplus
 }
 #endif
