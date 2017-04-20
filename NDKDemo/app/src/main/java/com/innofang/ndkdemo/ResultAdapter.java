@@ -63,7 +63,7 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ViewHolder
         public void bindHolder(String result, int position) {
             mTextView.setText(result);
             Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.anim_item);
-            animation.setStartOffset(position * 300);
+            animation.setStartOffset(position * 200);
             animation.setInterpolator(new AccelerateInterpolator());
             itemView.startAnimation(animation);
         }
