@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CrashHandlerDemo</string>
+    <string name="throw_exception">Throw Exception</string>
 </resources>
