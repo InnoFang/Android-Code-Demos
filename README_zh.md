@@ -28,7 +28,7 @@
     * VolleyRequest.java
   - 如果想看手机归属地应用的实现，可以看其余包中的文件
   
-+ [CallBackDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CallBackDemo)
++ [CallBackDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CallBackDemo) [文章链接](http://innofang.github.io/2017/03/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9B%9E%E8%B0%83/)
  
    - CallBackDemo0: 回调的基本用法
 
@@ -48,7 +48,7 @@
 
   自定义 View 的练习，一些常用用法，并且自己实现了自定义时钟 [ClockView](https://github.com/InnoFang/Android-Code-Demos/blob/master/ViewsDemo/app/src/main/java/com/innofang/viewsdemo/views/ClockView.java)
   
-+ [NDKDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/NDKDemo)
++ [NDKDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/NDKDemo) [文章链接](http://innofang.github.io/2017/04/16/Android-NDK%E5%BC%80%E5%8F%91%E4%BB%8E0%E5%88%B01/)
 
   使用了 Android.mk , Application.mk 和 ndk-build 的方式构建，演示了 NDK 的基本用法
   
