@@ -1,4 +1,7 @@
 # Android-Code-Demos
+
+English | [中文](https://github.com/InnoFang/Android-Code-Demos/blob/master/README_zh.md)
+
 This is my Android Learning Demo
 
 + [DataBingDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/DataBingDemo)
