@@ -62,8 +62,9 @@ This is my Android Learning Demo
   Show the basic usage of NDK.
    
 + [CrashHandlerDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CrashHandlerDemo)
-
-  When the App crash, the log will be writtern to the SD card and uploaded to the remote serve.
+  
+  When the App crashes, the log will be writtern to the SD card and uploaded to the remote serve.  
+  
 ## LICENSE
 
  [Apache License 2.0](https://github.com/InnoFang/Android-Code-Demos/blob/master/LICENSE)
