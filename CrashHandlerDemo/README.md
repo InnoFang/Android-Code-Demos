@@ -28,7 +28,9 @@ public static void setDefaultUncaughtExceptionHandler(UncaughtExceptionHandler e
 due to an uncaught exception, and no other handler has been defined
 for that thread.
 
-当线程由于一个未捕获的异常而异常终止时，并且没有定义其他的处理程序，那么就会这个设置的默认的处理程序就会被调用
+大致意思如下：
+
+当线程由于一个未捕获的异常而终止时，并且没有定义其他的处理程序，那么这个设置默认处理程序的方法就会被调用
 
 通俗的说，如果有一个程序由于一个未被捕获的异常而异常终止时，那么就会调用这个方法，并且回调 `UncaughtExceptionHandler` 的 `uncaughtException(Thread t, Throwable e)` 方法
 
