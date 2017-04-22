@@ -30,12 +30,10 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
     private static final String TAG = "CrashHandler";
     private static final boolean DEBUG = true;
-
-    /*private static final String PATH = Environment.getExternalStorageDirectory()
-            .getPath() + "/CrashTest/log/";*/
-    private String PATH;
     private static final String FILE_NAME = "crash";
     private static final String FILE_NAME_SUFFIX = ".trace";
+
+    private String PATH;
 
     private static CrashHandler sInstance = new CrashHandler();
     private Thread.UncaughtExceptionHandler mDefaultCrashHandler;
@@ -49,11 +47,11 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
     public void init(Context context) {
         mContext = context.getApplicationContext();
-        PATH = Environment.getExternalStorageDirectory()
-                .getPath()
+        PATH = Environment.getExternalStorageDirectory().getPath()
                 + "/"
                 + mContext.getResources().getString(R.string.app_name)
                 + "/log/";
+
         mDefaultCrashHandler = Thread.getDefaultUncaughtExceptionHandler();
         Thread.setDefaultUncaughtExceptionHandler(this);
     }
@@ -61,12 +59,11 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
     /**
      * 当程序中有未被捕获的异常时，系统将会自动调用该方法
      *
-     * @param thread  出现未捕获异常的线程
-     * @param ex 未捕获异常
+     * @param thread 出现未捕获异常的线程
+     * @param ex     未捕获异常
      */
     @Override
     public void uncaughtException(Thread thread, Throwable ex) {
-        Log.i(TAG, "uncaughtException: is called");
         try {
             /* 导出异常信息到 SD 卡中 */
             dumpExceptionToSDCard(ex);
@@ -75,6 +72,8 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
 
         ex.printStackTrace();
         /* 如果系统提供了默认的异常处理器，则交给系统去结束程序，否则就由自己结束自己 */
@@ -86,7 +85,6 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
     }
 
     private void dumpExceptionToSDCard(Throwable ex) throws IOException {
-        Log.i(TAG, "dumpExceptionToSDCard: is called");
         /* 如果 SD 卡不存在或无法使用，则无法把异常信息写入 SD 卡 */
         if (!Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             if (DEBUG) {
@@ -96,7 +94,6 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
         }
 
         File dir = new File(PATH);
-        Log.i(TAG, "dumpExceptionToSDCard: " + dir.getPath());
         if (!dir.exists()) {
             dir.mkdirs();
         }
@@ -144,5 +141,6 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
     private void uploadExceptionToServer() {
         // TODO:2017/4/20 Upload Exception Message To Your Web Server
+
     }
 }
