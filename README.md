@@ -1,4 +1,7 @@
 # Android-Code-Demos
+
+English | [中文](https://github.com/InnoFang/Android-Code-Demos/blob/master/README_zh.md)
+
 This is my Android Learning Demo
 
 + [DataBingDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/DataBingDemo)
@@ -61,6 +64,10 @@ This is my Android Learning Demo
 
   Show the basic usage of NDK.
    
++ [CrashHandlerDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CrashHandlerDemo)
+  
+  When the App crashes, the log will be writtern to the SD card and uploaded to the remote serve.  
+  
 ## LICENSE
 
  [Apache License 2.0](https://github.com/InnoFang/Android-Code-Demos/blob/master/LICENSE)
