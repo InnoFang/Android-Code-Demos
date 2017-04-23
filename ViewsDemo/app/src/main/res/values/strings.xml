@@ -22,4 +22,5 @@
     <string name="rotate_3d">rotate_3d</string>
     <string name="region_click_view">RegionClickView</string>
     <string name="clock_view">ClockView</string>
+    <string name="spider_net_view">SpiderNetView</string>
 </resources>

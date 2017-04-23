@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_clock);
+        setContentView(R.layout.view_spider_net);
 //        setBezier3View();
 //        setBezierHeartView();
 //        setPolyToPolyView();
@@ -66,40 +66,47 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.view_region_click);
                 break;
             case R.id.rotate_3d_image_view:
-                setContentView(R.layout.view_rotate_3d);
-                ImageView imageView = (ImageView) findViewById(R.id.img);
-                assert imageView != null;
-                imageView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        // 计算中心点（这里是使用view的中心作为旋转的中心点）
-                        final float centerX = v.getWidth() / 2.0f;
-                        final float centerY = v.getHeight() / 2.0f;
-
-                        //括号内参数分别为（上下文，开始角度，结束角度，x轴中心点，y轴中心点，深度，是否扭曲）
-                        final Rotate3DAnimation rotation = new Rotate3DAnimation(
-                                MainActivity.this,  /*上下文*/
-                                0,                  /*开始角度*/
-                                180,                /*结束角度*/
-                                centerX,            /*x轴中心点*/
-                                centerY,            /*y轴中心点*/
-                                0f,                 /*深度*/
-                                true                /*是否扭曲*/
-                        );
-                        rotation.setDuration(3000);     /*设置时长*/
-                        rotation.setFillAfter(true);    /*保持旋转后效果*/
-                        rotation.setInterpolator(new LinearInterpolator()); /*设置插值器*/
-                        v.startAnimation(rotation);     /*开始动画*/
-                    }
-                });
+                setRotate3DView();
                 break;
             case R.id.clock_view:
                 setContentView(R.layout.view_clock);
+                break;
+            case R.id.spider_net_view:
+                setContentView(R.layout.view_spider_net);
                 break;
             default:
                 break;
         }
         return true;
+    }
+
+    private void setRotate3DView() {
+        setContentView(R.layout.view_rotate_3d);
+        ImageView imageView = (ImageView) findViewById(R.id.img);
+        assert imageView != null;
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 计算中心点（这里是使用view的中心作为旋转的中心点）
+                final float centerX = v.getWidth() / 2.0f;
+                final float centerY = v.getHeight() / 2.0f;
+
+                //括号内参数分别为（上下文，开始角度，结束角度，x轴中心点，y轴中心点，深度，是否扭曲）
+                final Rotate3DAnimation rotation = new Rotate3DAnimation(
+                        MainActivity.this,  /*上下文*/
+                        0,                  /*开始角度*/
+                        180,                /*结束角度*/
+                        centerX,            /*x轴中心点*/
+                        centerY,            /*y轴中心点*/
+                        0f,                 /*深度*/
+                        true                /*是否扭曲*/
+                );
+                rotation.setDuration(3000);     /*设置时长*/
+                rotation.setFillAfter(true);    /*保持旋转后效果*/
+                rotation.setInterpolator(new LinearInterpolator()); /*设置插值器*/
+                v.startAnimation(rotation);     /*开始动画*/
+            }
+        });
     }
 
     private void setPolyToPolyView() {
