@@ -4,10 +4,14 @@
 
 这是我的 Android 学习 Demo  
 
++ [BaseDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/BaseDemo)
+
+  这个 Demo 将集成一些常用代码，诸如 运行时权限封装与管理，CrashHandler，Fragment托管 等业务代码
+  
 + [DataBindingDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/DataBingDemo)
   
-  这个 Demo 包含 DataBinding 的基本用法
-  
+  这个 Demo 包含 DataBinding 的基本用法
+  
 + [MVPDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/MVPDemo)
  
    演示如何使用 MVP 模式
