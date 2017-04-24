@@ -67,6 +67,10 @@ This is my Android Learning Demo
 + [CrashHandlerDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CrashHandlerDemo)
   
   When the App crashes, the log will be writtern to the SD card and uploaded to the remote serve.  
+
++ [RuntimePermissionDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/RuntimePermissionDemo)
+
+  The encapsulation and basic usage of runtime permissions.
   
 ## LICENSE
 
