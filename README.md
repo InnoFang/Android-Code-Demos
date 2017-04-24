@@ -4,6 +4,10 @@ English | [中文](https://github.com/InnoFang/Android-Code-Demos/blob/master/RE
 
 This is my Android Learning Demo
 
++ [BaseDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/BaseDemo)
+
+  The Demo will integrate some common code
+
 + [DataBingDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/DataBingDemo)
 
   This is my DataBinding Demo, which contain some basic usage of DataBinding
