@@ -21,7 +21,7 @@ public class App extends Application {
         sInstance = this;
         /* 在这里为应用设置异常处理，然后程序才能获取未处理的异常 */
         CrashHandler.getInstance()
-                .init(getApplicationContext());
+                .init(this);
     }
 
     public static App getInstance() {

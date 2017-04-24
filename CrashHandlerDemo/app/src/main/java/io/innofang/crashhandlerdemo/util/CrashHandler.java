@@ -5,8 +5,10 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Environment;
+import android.os.Looper;
 import android.os.Process;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -41,7 +43,8 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
     private Thread.UncaughtExceptionHandler mDefaultCrashHandler;
     private Context mContext;
 
-    private CrashHandler() {}
+    private CrashHandler() {
+    }
 
     public static CrashHandler getInstance() {
         return sInstance;
@@ -65,7 +68,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
      * @param ex     未捕获异常
      */
     @Override
-    public void uncaughtException(Thread thread, Throwable ex) {
+    public void uncaughtException(final Thread thread, final Throwable ex) {
         try {
             /* 导出异常信息到 SD 卡中 */
             dumpExceptionToSDCard(ex);
@@ -75,15 +78,39 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
             e.printStackTrace();
         }
 
-
-
         ex.printStackTrace();
-        /* 如果系统提供了默认的异常处理器，则交给系统去结束程序，否则就由自己结束自己 */
-        if (mDefaultCrashHandler != null) {
+        if (!handleException(ex) && mDefaultCrashHandler != null) {
             mDefaultCrashHandler.uncaughtException(thread, ex);
         } else {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                Log.e(TAG, "error : ", e);
+            }
             Process.killProcess(Process.myPid());
         }
+    }
+
+    /**
+     * 自定义错误处理,收集错误信息 发送错误报告等操作均在此完成.
+     *
+     * @param ex
+     * @return true:如果处理了该异常信息;否则返回false.
+     */
+    private boolean handleException(Throwable ex) {
+        if (ex == null) {
+            return false;
+        }
+        //使用Toast来显示异常信息
+        new Thread() {
+            @Override
+            public void run() {
+                Looper.prepare();
+                Toast.makeText(mContext, "很抱歉,程序出现异常,即将退出.", Toast.LENGTH_LONG).show();
+                Looper.loop();
+            }
+        }.start();
+        return true;
     }
 
     private void dumpExceptionToSDCard(Throwable ex) throws IOException {
@@ -117,7 +144,6 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
     @SuppressWarnings("deprecation")
     private void dumpPhoneInfo(PrintWriter pw) throws PackageManager.NameNotFoundException {
-        Log.i(TAG, "dumpPhoneInfo: is called");
         PackageManager pm = mContext.getPackageManager();
         PackageInfo pi = pm.getPackageInfo(mContext.getPackageName(),
                 PackageManager.GET_ACTIVITIES);
