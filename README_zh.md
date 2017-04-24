@@ -48,8 +48,10 @@
   
 + [ViewsDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ViewsDemo)
 
-  自定义 View 的练习，一些常用用法，并且自己实现了自定义时钟 [ClockView](https://github.com/InnoFang/Android-Code-Demos/blob/master/ViewsDemo/app/src/main/java/com/innofang/viewsdemo/views/ClockView.java) 自定义
-  蜘蛛网数据展示 [SpiderNetView](https://github.com/InnoFang/Android-Code-Demos/blob/master/ViewsDemo/app/src/main/java/com/innofang/viewsdemo/views/SpiderNetView.java)
+    自定义 View 的练习，一些常用用法
+    自定义时钟 [ClockView](https://github.com/InnoFang/Android-Code-Demos/blob/master/ViewsDemo/app/src/main/java/com/innofang/viewsdemo/views/ClockView.java)   
+    自定义蜘蛛网数据展示 [SpiderNetView](https://github.com/InnoFang/Android-Code-Demos/blob/master/ViewsDemo/app/src/main/java/com/innofang/viewsdemo/views/SpiderNetView.java)  
+  
 + [NDKDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/NDKDemo) 
 
   使用了 Android.mk , Application.mk 和 ndk-build 的方式构建，演示了 NDK 的基本用法
@@ -62,7 +64,8 @@
 
 + [RuntimePermissionDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/RuntimePermissionDemo)
 
-  运行时权限的封装与基本使用
+  运行时权限的封装与基本使用
+  
 ## LICENSE
 
 [Apache License 2.0](https://github.com/InnoFang/Android-Code-Demos/blob/master/LICENSE)
