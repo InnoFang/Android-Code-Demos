@@ -1,4 +1,4 @@
-package io.innofang.crashhandlerdemo;
+package io.innofang.crashhandlerdemo.util;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -16,6 +16,8 @@ import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
+import io.innofang.crashhandlerdemo.R;
 
 import static android.os.Build.VERSION.SDK_INT;
 

@@ -2,6 +2,8 @@ package io.innofang.crashhandlerdemo;
 
 import android.app.Application;
 
+import io.innofang.crashhandlerdemo.util.CrashHandler;
+
 /**
  * Author: Inno Fang
  * Time: 2017/4/20 22:14
