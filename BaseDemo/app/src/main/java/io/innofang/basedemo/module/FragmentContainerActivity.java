@@ -1,4 +1,4 @@
-package io.innofang.basedemo;
+package io.innofang.basedemo.module;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;

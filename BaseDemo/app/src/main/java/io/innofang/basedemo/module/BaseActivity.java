@@ -1,4 +1,4 @@
-package io.innofang.basedemo;
+package io.innofang.basedemo.module;
 
 import android.app.Activity;
 import android.content.pm.PackageManager;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import io.innofang.basedemo.utils.ActivityCollector;
-import io.innofang.basedemo.utils.PermissionListener;
+import io.innofang.basedemo.utils.event.PermissionListener;
 
 /**
  * Author: Inno Fang

@@ -1,4 +1,4 @@
-package io.innofang.basedemo.utils;
+package io.innofang.basedemo.utils.event;
 
 import java.util.List;
 

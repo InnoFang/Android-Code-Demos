@@ -1,4 +1,4 @@
-package io.innofang.basedemo;
+package io.innofang.basedemo.module;
 
 /**
  * Author: Inno Fang
