@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * Author: Inno Fang
- * Time: 2017/4/25 09:50
  * Description: Runtime Permissions Listener
  */
 
