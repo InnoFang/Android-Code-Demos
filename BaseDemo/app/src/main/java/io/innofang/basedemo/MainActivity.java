@@ -7,7 +7,7 @@ public class MainActivity extends FragmentContainerActivity {
 
     @Override
     protected Fragment createFragment() {
-        return BaseFragment.newInstance();
+        return MainFragment.newInstance();
     }
 
     @Override

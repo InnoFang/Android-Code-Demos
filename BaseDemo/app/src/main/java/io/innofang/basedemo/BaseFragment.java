@@ -1,12 +1,13 @@
 package io.innofang.basedemo;
 
 import android.os.Bundle;
+import android.support.annotation.IdRes;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 /**
  * Author: Inno Fang
@@ -14,19 +15,25 @@ import android.widget.TextView;
  */
 
 
-public class BaseFragment extends Fragment {
+public abstract class BaseFragment extends Fragment {
 
     private static final String TAG = "BaseFragment";
+    protected View mView;
 
-    public static Fragment newInstance() {
-        return new BaseFragment();
-    }
+    @LayoutRes
+    protected abstract int getLayoutId();
+
+    protected abstract void createView(View view, Bundle savedInstanceState);
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText("Hello World");
-        return textView;
+        mView = inflater.inflate(getLayoutId(), container, false);
+        createView(mView, savedInstanceState);
+        return mView;
+    }
+
+    public View find(@IdRes int id) {
+        return mView.findViewById(id);
     }
 }

@@ -8,7 +8,7 @@ import io.innofang.basedemo.App;
 /**
  * Author: Inno Fang
  * Time: 2017/4/25 10:56
- * Description:
+ * Description: Toast 工具类
  */
 
 
