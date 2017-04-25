@@ -10,8 +10,7 @@ import android.widget.TextView;
 
 /**
  * Author: Inno Fang
- * Time: 2017/4/25 09:42
- * Description:
+ * Description: Base Operation of Fragment
  */
 
 

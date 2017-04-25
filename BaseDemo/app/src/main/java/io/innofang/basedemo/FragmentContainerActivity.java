@@ -9,8 +9,7 @@ import android.support.v4.app.FragmentManager;
 
 /**
  * Author: Inno Fang
- * Time: 2017/4/25 09:19
- * Description:
+ * Description: Activity 托管 Fragment 代码封装
  */
 
 
@@ -23,12 +22,14 @@ public abstract class FragmentContainerActivity extends BaseActivity {
 
     /**
      * 创建 Fragment 实例
+     *
      * @return 需要托管的 Fragment 实例
      */
     protected abstract Fragment createFragment();
 
     /**
      * 获得托管 Fragment 的布局文件 Id
+     *
      * @return 托管 Fragment 的布局文件 Id
      */
     @LayoutRes
@@ -36,6 +37,7 @@ public abstract class FragmentContainerActivity extends BaseActivity {
 
     /**
      * 获得托管 Fragment 的 View 的 Id
+     *
      * @return 托管 Fragment 的 View 的 Id
      */
     @IdRes
@@ -44,6 +46,7 @@ public abstract class FragmentContainerActivity extends BaseActivity {
 
     /**
      * 托管单一 Fragment
+     *
      * @param savedInstanceState
      */
     @Override
@@ -64,6 +67,7 @@ public abstract class FragmentContainerActivity extends BaseActivity {
 
     /**
      * 切换需要托管的 Fragment
+     *
      * @param fragment 需要托管的 Fragment
      */
     public void switchFragment(Fragment fragment) {
