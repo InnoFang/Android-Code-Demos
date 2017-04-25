@@ -1,4 +1,4 @@
-package com.example.innf.mvpdemo;
+package io.innofang.mvpdemo;
 
 import org.junit.Test;
 

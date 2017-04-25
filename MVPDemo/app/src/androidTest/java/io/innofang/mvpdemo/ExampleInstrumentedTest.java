@@ -1,4 +1,4 @@
-package com.example.innf.mvpdemo;
+package io.innofang.mvpdemo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.innf.mvpdemo", appContext.getPackageName());
+        assertEquals("io.innofang.mvpdemo", appContext.getPackageName());
     }
 }
