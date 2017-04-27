@@ -1,5 +1,6 @@
 # RxJava2Demo
 
+RxJava2 Study Demo
 
 ## NOTE
 
@@ -89,11 +90,57 @@ observable.subscribe(new Consumer<String>() {
 
 ### Scheduler 线程控制
 
- + `Schedulers.immediate();` 在当前线程中运行（默认）
- + `Schedulers.io();` 有读写操作或者信息交互操作时使用。会启动新的线程进行操作，但是在其内部使用的是无数量上线的线程池，若有空闲线程存在会直接调用，效率上有一定优势。
- + `Schedulers.computation();` 当进行 CPU 密集型计算时（并且不会被 IO 操作限制性能）使用。相比于 `io()` 方法内部的实现，`computation()` 的内部实现使用的是有固定数量的线程池，其大小为 CPU 核数。所以若在这里面执行 IO 操作会浪费 CPU 和大量时间
- + `AndroidSchedulers.mainThread();` 在 Android 主线程 ( 即 UI 线程 )中执行
+ + `Schedulers.immediate()` 在当前线程中运行（默认）
+ + `Schedulers.io()` 有读写操作或者信息交互操作时使用。会启动新的线程进行操作，但是在其内部使用的是无数量上线的线程池，若有空闲线程存在会直接调用，效率上有一定优势。
+ + `Schedulers.computation()` 当进行 CPU 密集型计算时（并且不会被 IO 操作限制性能）使用。相比于 `Schedulers.io()` 方法内部的实现，`Schedulers.computation()` 的内部实现使用的是有固定数量的线程池，其大小为 CPU 核数。所以若在这里面执行 IO 操作会浪费 CPU 和大量时间
+ + `AndroidSchedulers.mainThread()` 在 Android 主线程 ( 即 UI 线程 )中执行
  
+ #### 线程切换
+ 
+ 上面提到了线程控制，并且我们都知道耗时操作要在子线程中执行，更新 UI 的操作要在主线程中执行，那么我们怎样才能实现这种在两种线程内执行功能的操作呢？
+ 
+ 答案就是使用线程切换，RxJava 提供了两种方法
+  + `subscribeOn()` 指定 Observable 对象所执行操作的线程
+  + `observeOn()` 指定 Observer 对象所执行操作的线程
+  
+**注意** 如果指定了 `subscribeOn()` 但是没有指定 `observeOn()` 方法，那么对应的 Observer 对象的操作线程就是跟 Observable 一样的了
+
+有了上面两个方法，那么就可以在创建 Observable 对象的时候进行网络请求，并用 `subscribeOn()`  指定在 `Schedulers.io()`  中执行，然后再利用 `observeOn()` 指定 Observer 的操作是在 `AndroidSchedulers.mainThread()` 中，那么我们就可以在 Observer 对象的 `onNext()` 方法中，将获得资源添加给对应的 View。参考操作如下：
+```java
+Observable.create(new ObservableOnSubscribe<Bitmap>() {
+    @Override
+    public void subscribe(ObservableEmitter<Bitmap> e) throws Exception {
+        // 网络请求
+        // 将请求资源转化为 Bitmap
+        if (null != bitmap) {
+            e.onNext(bitmap);
+        }
+    }
+}).subscribeOn(Schedulers.io())                     /* 在子线程中进行网络请求 */
+        .observeOn(AndroidSchedulers.mainThread())  /* 在主线程给 View 添加请求的资源 */
+        .subscribe(new Observer<Bitmap>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(Bitmap value) {
+                imageView.setImageBitmap(value);
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+```
+  
  
  
  
