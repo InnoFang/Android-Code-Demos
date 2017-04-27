@@ -1,8 +1,8 @@
 package io.innofang.rxjava2demo.java;
 
-import java.util.concurrent.Callable;
-
 import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
@@ -31,24 +31,24 @@ public class Test {
     }
 
     public Observable<String> getObservable() {
-     /*   return Observable.create(new ObservableOnSubscribe<String>() {
+        return Observable.create(new ObservableOnSubscribe<String>() {
             @Override
             public void subscribe(ObservableEmitter<String> e) throws Exception {
                 e.onNext("Today's news update");
                 e.onNext("Today's topic is Study");
                 e.onComplete();
             }
-        });*/
+        });
         /* 下面两个方法作用类似，just 的内部调用的就是 fromArray */
 //     return Observable.just("Topic 1", "Heat 1", "News");
 //     return Observable.fromArray("Topic 1", "Heat 1", "News");
         /* 只能发送一个数据 */
-        return Observable.fromCallable(new Callable<String>() {
+        /*return Observable.fromCallable(new Callable<String>() {
             @Override
             public String call() throws Exception {
                 return "Topic is Study";
             }
-        });
+        });*/
     }
 
     public Observer<String> getObserver() {

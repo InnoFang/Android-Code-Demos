@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">RxJava2Demo</string>
     <string name="click">Click</string>
+    <string name="load_image"/>
 </resources>
