@@ -1,4 +1,4 @@
-package io.innofang.basedemo.module;
+package io.innofang.basedemo.base;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -14,8 +14,6 @@ import android.support.v4.app.FragmentManager;
 
 
 public abstract class FragmentContainerActivity extends BaseActivity {
-
-    private static final String TAG = "FragmentContainerActivi";
 
     private FragmentManager mFragmentManager;
     private Fragment mFragment;

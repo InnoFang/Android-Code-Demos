@@ -1,4 +1,4 @@
-package io.innofang.basedemo.module;
+package io.innofang.basedemo.base;
 
 import android.app.Activity;
 import android.content.pm.PackageManager;
@@ -23,7 +23,6 @@ import io.innofang.basedemo.utils.event.PermissionListener;
 
 public class BaseActivity extends AppCompatActivity {
 
-    private static final String TAG = "BaseActivity";
     private static final int PERMISSION_REQUEST_CODE = 1;
 
     private static PermissionListener mListener;

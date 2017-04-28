@@ -1,4 +1,4 @@
-package io.innofang.basedemo.module;
+package io.innofang.basedemo.base;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -17,7 +17,6 @@ import android.view.ViewGroup;
 
 public abstract class BaseFragment extends Fragment {
 
-    private static final String TAG = "BaseFragment";
     protected View mView;
 
     @LayoutRes

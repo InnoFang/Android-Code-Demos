@@ -1,4 +1,4 @@
-package io.innofang.basedemo.module;
+package io.innofang.basedemo.base;
 
 /**
  * Author: Inno Fang
@@ -8,8 +8,8 @@ package io.innofang.basedemo.module;
 
 public interface BasePresenter {
 
-    void start();
+    void attach();
 
-    void destroy();
+    void detach();
 
 }

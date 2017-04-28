@@ -1,4 +1,4 @@
-package io.innofang.basedemo.module.main;
+package io.innofang.basedemo.module;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import io.innofang.basedemo.R;
-import io.innofang.basedemo.module.BaseFragment;
+import io.innofang.basedemo.base.BaseFragment;
 import io.innofang.basedemo.utils.Toasts;
 
 /**
