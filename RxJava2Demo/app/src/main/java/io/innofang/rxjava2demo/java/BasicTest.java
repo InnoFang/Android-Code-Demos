@@ -14,11 +14,11 @@ import io.reactivex.functions.Consumer;
  */
 
 
-public class Test {
+public class BasicTest {
 
 
     public static void main(String[] args) {
-        Test test = new Test();
+        BasicTest test = new BasicTest();
         Observable<String> observable = test.getObservable();
         Observer<String> observer = test.getObserver();
 //        observable.subscribe(observer);
@@ -28,6 +28,7 @@ public class Test {
                 System.out.println("accept is called, " + s);
             }
         });
+
     }
 
     public Observable<String> getObservable() {

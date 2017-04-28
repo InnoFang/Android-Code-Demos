@@ -71,6 +71,21 @@ Observer<String> observer = new Observer<String>() {
 ```
 **注意** ` onSubscribe(Disposable d)` 方法是在每次 Observer 接收来自 Observable 数据的时候调用，其余的 `onNext(String value)`方、`onError(Throwable e)`方法、`onComplete()`方法，对应于 Observable 中调用的方法，其中 `onError(Throwable e)`方法、`onComplete()`方法两者只能调用一个，都不会重复调用
 
+当然，如果只是用来接收发送来的数据而不会有错误或者完成的请求的话，完全可以使用 `Consumer` 对象
+```java
+Consumer<String> consumer = new Consumer<String>(){
+
+    @Override
+    public void accept(String s) throws Exception {
+        // do something
+    }
+};
+```
+这里面的 accept 方法就是用来接收 Observable 发送过来的数据的
+
+**注意** 在 `subscribe()` 方法可以接受多个 `Consumer` 对象，具体每个 `Consumer` 对象对应的是什么请看下图
+![](http://i4.buimg.com/567571/7484b892fcde1e25.png)
+
 #### 让 Observable 对象与 Observer 对象实现订阅关系
 
 使用的是 Observable 对象的 `subscribe()` 方法，传入 Observer 对象
