@@ -29,7 +29,9 @@ public class SharedElementActivity extends AppCompatActivity {
 
 //        startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this, firstSharedView, "sharedView").toBundle());
 
-        /* 要实现这种共享元素的过渡，那么就需要在两个布局对应的 view 中指定相同的 android:transitionName="" */
+        /* 要实现这种共享元素的过渡，那么就需要在两个布局对应的 view 中指定相同的 android:transitionName=""
+        * 有多个 View 需要过渡就需要用到 Pair 来将 view 和 transitionName 对应起来
+        * */
         Pair first = new Pair<>(mFirstSharedView, ViewCompat.getTransitionName(mFirstSharedView));
         Pair second = new Pair<>(mSecondSharedView, ViewCompat.getTransitionName(mSecondSharedView));
 

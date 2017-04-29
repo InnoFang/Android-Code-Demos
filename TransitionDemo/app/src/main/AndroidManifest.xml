@@ -28,6 +28,8 @@
         </activity>
         <activity android:name=".SharedElementSecondActivity">
         </activity>
+        <activity android:name=".CustomTransitionSecondActivity">
+        </activity>
     </application>
 
 </manifest>
