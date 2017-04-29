@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="io.innofang.transitiondemo.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CircularReveal"
+        android:text="@string/circular_reveal"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="windowTransitions"
+        android:text="@string/window_transitions"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sharedElement"
+        android:text="@string/shared_element"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="customTransition"
+        android:text="@string/custom_transition"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

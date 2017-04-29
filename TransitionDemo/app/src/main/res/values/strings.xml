@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TransitionDemo</string>
+    <string name="circular_reveal">CircularReveal</string>
+    <string name="window_transitions">WindowTransitions</string>
+    <string name="shared_element">SharedElement</string>
+    <string name="custom_transition">CustomTransition</string>
+</resources>
