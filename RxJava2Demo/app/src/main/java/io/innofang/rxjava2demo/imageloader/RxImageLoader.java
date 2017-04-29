@@ -3,6 +3,7 @@ package io.innofang.rxjava2demo.imageloader;
 import android.content.Context;
 import android.widget.ImageView;
 
+import io.innofang.rxjava2demo.imageloader.bean.Image;
 import io.reactivex.Observable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
@@ -56,35 +57,6 @@ public class RxImageLoader {
                     }
 
                 });
-        /*Observable.concat(mRequestCreator.getImageFromMemory(mUrl),
-                mRequestCreator.getImageFromDisk(mUrl),
-                mRequestCreator.getImageFromNetwork(mUrl))
-                .first(new Function<Image, Boolean>() {
-                    @Override
-                    public Boolean apply(Image image) throws Exception {
-                        return null != image;
-                    }
-                }).subscribe(new Observer<Image>() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
-
-                    }
-
-                    @Override
-                    public void onNext(Image value) {
-                        imageView.setImageBitmap(value.getBitmap());
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-
-                    }
-
-                    @Override
-                    public void onComplete() {
-
-                    }
-                });*/
     }
 
     public static class Builder {

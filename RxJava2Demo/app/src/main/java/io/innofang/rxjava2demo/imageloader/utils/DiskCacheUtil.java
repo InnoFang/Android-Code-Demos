@@ -1,4 +1,4 @@
-package io.innofang.rxjava2demo.imageloader;
+package io.innofang.rxjava2demo.imageloader.utils;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;

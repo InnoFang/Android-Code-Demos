@@ -1,4 +1,4 @@
-package io.innofang.rxjava2demo.imageloader;
+package io.innofang.rxjava2demo.imageloader.utils;
 
 import java.io.Closeable;
 import java.io.IOException;

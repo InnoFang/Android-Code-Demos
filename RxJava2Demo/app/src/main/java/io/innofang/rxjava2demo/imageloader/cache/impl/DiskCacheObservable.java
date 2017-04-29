@@ -1,8 +1,9 @@
-package io.innofang.rxjava2demo.imageloader;
+package io.innofang.rxjava2demo.imageloader.cache.impl;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 
 import com.jakewharton.disklrucache.DiskLruCache;
 
@@ -16,6 +17,10 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import io.innofang.rxjava2demo.imageloader.bean.Image;
+import io.innofang.rxjava2demo.imageloader.cache.CacheObservable;
+import io.innofang.rxjava2demo.imageloader.utils.CloseUtil;
+import io.innofang.rxjava2demo.imageloader.utils.DiskCacheUtil;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -45,6 +50,7 @@ public class DiskCacheObservable extends CacheObservable {
     public Image getDataFromCache(String url) {
         Bitmap bitmap = getDataFromDiskLruCache(url);
         if (null != bitmap) {
+            Log.i("cache", "getDataFromDisk: is called");
             return new Image(url, bitmap);
         }
         return null;

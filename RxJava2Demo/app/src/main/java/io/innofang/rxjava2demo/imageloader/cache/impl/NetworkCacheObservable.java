@@ -1,12 +1,17 @@
-package io.innofang.rxjava2demo.imageloader;
+package io.innofang.rxjava2demo.imageloader.cache.impl;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
+
+import io.innofang.rxjava2demo.imageloader.bean.Image;
+import io.innofang.rxjava2demo.imageloader.cache.CacheObservable;
+import io.innofang.rxjava2demo.imageloader.utils.CloseUtil;
 
 /**
  * Author: Inno Fang
@@ -19,8 +24,10 @@ public class NetworkCacheObservable extends CacheObservable {
     @Override
     public Image getDataFromCache(String url) {
         Bitmap bitmap = downloadImage(url);
-        if (null != bitmap)
+        if (null != bitmap) {
+            Log.i("cache", "getDataFromNetWork: is called");
             return new Image(url, bitmap);
+        }
         return null;
     }
 

@@ -2,15 +2,10 @@ package io.innofang.rxjava2demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.functions.Consumer;
-import io.reactivex.functions.Function;
+import io.innofang.rxjava2demo.imageloader.RxImageLoader;
 
 public class LoadImageActivity extends AppCompatActivity {
 
@@ -22,7 +17,7 @@ public class LoadImageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load_image);
-       /* final ImageView imageView = (ImageView) findViewById(R.id.image_view);
+        final ImageView imageView = (ImageView) findViewById(R.id.image_view);
         findViewById(R.id.load_image_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,12 +25,12 @@ public class LoadImageActivity extends AppCompatActivity {
                         .load(URL)
                         .into(imageView);
             }
-        });*/
+        });
 
-        final Observable memoryObservable = Observable.create(new ObservableOnSubscribe<String>() {
+        /*final Observable memoryObservable = Observable.create(new ObservableOnSubscribe<String>() {
             @Override
             public void subscribe(ObservableEmitter<String> e) throws Exception {
-                e.onNext(null);
+//                e.onNext("null");
                 e.onComplete();
             }
         });
@@ -61,7 +56,7 @@ public class LoadImageActivity extends AppCompatActivity {
                         .first(new Function<String, Boolean>() {
                             @Override
                             public Boolean apply(String s) throws Exception {
-                                return !TextUtils.isEmpty(s);
+                                return s.equals("null");
                             }
                         })
                         .subscribe(new Consumer<String>() {
@@ -71,6 +66,6 @@ public class LoadImageActivity extends AppCompatActivity {
                             }
                         });
             }
-        });
+        });*/
     }
 }

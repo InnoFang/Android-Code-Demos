@@ -1,5 +1,6 @@
-package io.innofang.rxjava2demo.imageloader;
+package io.innofang.rxjava2demo.imageloader.cache;
 
+import io.innofang.rxjava2demo.imageloader.bean.Image;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -21,7 +22,8 @@ public abstract class CacheObservable {
             public void subscribe(ObservableEmitter<Image> e) throws Exception {
                 if (!e.isDisposed()) {
                     Image image = getDataFromCache(url);
-                    e.onNext(image);
+                    if (null != image)
+                        e.onNext(image);
                     e.onComplete();
                 }
             }

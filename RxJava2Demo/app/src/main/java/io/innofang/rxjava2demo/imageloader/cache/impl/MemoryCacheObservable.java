@@ -1,7 +1,11 @@
-package io.innofang.rxjava2demo.imageloader;
+package io.innofang.rxjava2demo.imageloader.cache.impl;
 
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.util.LruCache;
+
+import io.innofang.rxjava2demo.imageloader.bean.Image;
+import io.innofang.rxjava2demo.imageloader.cache.CacheObservable;
 
 /**
  * Author: Inno Fang
@@ -27,8 +31,8 @@ public class MemoryCacheObservable extends CacheObservable {
     @Override
     public Image getDataFromCache(String url) {
         Bitmap bitmap = mLruCache.get(url);
-
         if (null != bitmap) {
+            Log.i("cache", "getDataFromMemory: is called");
             return new Image(url, bitmap);
         }
         return null;

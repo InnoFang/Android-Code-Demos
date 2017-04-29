@@ -1,4 +1,4 @@
-package io.innofang.rxjava2demo.imageloader;
+package io.innofang.rxjava2demo.imageloader.bean;
 
 import android.graphics.Bitmap;
 
