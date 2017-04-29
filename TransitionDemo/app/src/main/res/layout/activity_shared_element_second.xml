@@ -3,31 +3,31 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp">
+    android:layout_margin="16dp"
+    android:orientation="vertical">
 
     <View
-        android:id="@+id/first_shared_view"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:background="#00cc00"
         android:onClick="onClick"
         android:transitionName="sharedView"/>
 
     <View
-        android:id="@+id/secondSharedView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="210dp"
         android:background="#ff9900"
         android:onClick="onClick"
         android:transitionName="secondSharedView"/>
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:text="这是第一个Activity"
-        android:textColor="#ff0000"
+        android:layout_marginTop="100dp"
+        android:text="这是第二个Activity"
+        android:textColor="#ff6600"
         android:textSize="20sp"/>
 </RelativeLayout>

@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".WindowTransitionsSecondActivity">
         </activity>
+        <activity android:name=".SharedElementSecondActivity">
+        </activity>
     </application>
 
 </manifest>
