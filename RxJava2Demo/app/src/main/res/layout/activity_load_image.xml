@@ -7,15 +7,67 @@
     android:orientation="vertical"
     tools:context="io.innofang.rxjava2demo.LoadImageActivity">
 
-    <Button
-        android:id="@+id/load_image_button"
-        android:text="@string/load_image"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <ImageView
-        android:contentDescription="@null"
-        android:id="@+id/image_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_view_1"
+                android:contentDescription="@null"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="500dp"/>
+            <ImageView
+                android:id="@+id/image_view_2"
+                android:contentDescription="@null"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="500dp"/>
+            <ImageView
+                android:id="@+id/image_view_3"
+                android:contentDescription="@null"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="500dp"/>
+            <ImageView
+                android:id="@+id/image_view_4"
+                android:contentDescription="@null"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="500dp"/>
+            <ImageView
+                android:id="@+id/image_view_5"
+                android:contentDescription="@null"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="500dp"/>
+            <ImageView
+                android:id="@+id/image_view_6"
+                android:contentDescription="@null"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="500dp"/>
+            <ImageView
+                android:id="@+id/image_view_7"
+                android:contentDescription="@null"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="500dp"/>
+            <ImageView
+                android:id="@+id/image_view_8"
+                android:contentDescription="@null"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="500dp"/>
+            <ImageView
+                android:id="@+id/image_view_9"
+                android:contentDescription="@null"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="500dp"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
