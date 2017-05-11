@@ -1,7 +1,6 @@
 package io.innofang.basedemo.module;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.TextView;
 
@@ -17,8 +16,12 @@ import io.innofang.basedemo.utils.Toasts;
 
 public class MainFragment extends BaseFragment {
 
-    public static Fragment newInstance() {
-        return new MainFragment();
+    public static MainFragment newInstance() {
+
+        Bundle args = new Bundle();
+        MainFragment fragment = new MainFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override
