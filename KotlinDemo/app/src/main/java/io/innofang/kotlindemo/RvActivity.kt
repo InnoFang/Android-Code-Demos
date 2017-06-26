@@ -1,10 +1,12 @@
 package io.innofang.kotlindemo
 
+import android.content.Context
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import io.innofang.weather.R
+import android.widget.Toast
+import io.innofang.koolweather.utils.event.OnRecyclerItemListener
 
 class RvActivity : AppCompatActivity() {
 
@@ -19,6 +21,18 @@ class RvActivity : AppCompatActivity() {
 
         numberRecyclerView.layoutManager = LinearLayoutManager(RvActivity@ this)
         numberRecyclerView.adapter = adapter
+
+        // add a click listener for recycler view
+        /*adapter.action = {
+            toast(it)
+        }*/
+        val action = OnRecyclerItemListener(numberRecyclerView)
+        action.onItemClick = {
+            if (it is RvAdapter.RvViewHolder) {
+                toast(it.infoTextView.text.toString())
+            }
+        }
+        numberRecyclerView.addOnItemTouchListener(action)
     }
 
     fun initData(): List<Int> = intent?.getStringExtra("value")
@@ -30,5 +44,8 @@ class RvActivity : AppCompatActivity() {
                 }
             } ?: List<Int>(0) { it -> it }
 
+    fun Context.toast(text: String = "", time: Int = Toast.LENGTH_SHORT) {
+        Toast.makeText(this, text, time).show()
+    }
 }
 

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="io.innofang.weather.io.innofang.kotlindemo.MainActivity">
+    tools:context="io.innofang.kotlindemo.io.innofang.kotlindemo.MainActivity">
 
     <TextView
         android:id="@+id/text_view"

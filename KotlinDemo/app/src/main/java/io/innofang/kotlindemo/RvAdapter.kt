@@ -16,6 +16,8 @@ import android.widget.TextView
 public class RvAdapter(var list: List<Int>) : RecyclerView.Adapter<RvAdapter.RvViewHolder>() {
 
 
+    var action: ((text: String) -> Unit)? = null
+
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): RvViewHolder {
         return RvViewHolder(LayoutInflater.from(parent!!.context)
                 .inflate(R.layout.simple_list_item_1, parent, false))
@@ -24,11 +26,13 @@ public class RvAdapter(var list: List<Int>) : RecyclerView.Adapter<RvAdapter.RvV
 
     override fun onBindViewHolder(holder: RvViewHolder?, position: Int) {
         holder!!.infoTextView.text = list[position].toString()
+        holder.itemView.setOnClickListener { action?.invoke(list[position].toString()) }
+
     }
 
     override fun getItemCount(): Int = list?.let { list.size } ?: 0
 
-    class RvViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class RvViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         val infoTextView: TextView by lazy { itemView.findViewById(android.R.id.text1) as TextView }
 

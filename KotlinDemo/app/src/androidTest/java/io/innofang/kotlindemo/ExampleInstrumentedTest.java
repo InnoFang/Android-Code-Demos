@@ -1,4 +1,4 @@
-package io.innofang.weather;
+package io.innofang.kotlindemo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

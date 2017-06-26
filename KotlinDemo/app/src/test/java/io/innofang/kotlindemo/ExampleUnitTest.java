@@ -1,4 +1,4 @@
-package io.innofang.weather;
+package io.innofang.kotlindemo;
 
 import org.junit.Test;
 

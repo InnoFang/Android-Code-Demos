@@ -3,7 +3,6 @@ package io.innofang.kotlindemo
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
-import io.innofang.weather.R
 
 class DetailActivity : AppCompatActivity() {
 

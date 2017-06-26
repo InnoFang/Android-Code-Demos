@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import io.innofang.weather.R
 
 class MainActivity : AppCompatActivity() {
 
