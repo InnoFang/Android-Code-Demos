@@ -20,11 +20,11 @@ public abstract class BaseSimpleAdapter<T> extends RecyclerView.Adapter<BaseSimp
     private Context mContext;
     private List<T> mList;
     @LayoutRes
-    private int mResLayoutId;
+    private int mLayoutResId;
 
     public BaseSimpleAdapter(Context context, @LayoutRes int id, List<T> list) {
         mContext = context;
-        mResLayoutId = id;
+        mLayoutResId = id;
         mList = list;
     }
 
@@ -53,7 +53,7 @@ public abstract class BaseSimpleAdapter<T> extends RecyclerView.Adapter<BaseSimp
     @SuppressWarnings("unchecked")
     @Override
     public BaseSimpleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-       return BaseSimpleViewHolder.getViewHolder(mContext, parent, mResLayoutId);
+       return BaseSimpleViewHolder.getViewHolder(mContext, parent, mLayoutResId);
     }
 
     @Override
