@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OpenCVSample</string>
+    <string name="select_image">Select Image</string>
+    <string name="process_image">Process Image</string>
+</resources>
