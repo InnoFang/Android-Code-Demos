@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context="io.innofang.processingdemo.MenuActivity">
+
+    <Button
+        android:id="@+id/simple_sketch_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/simple_sketch_one"/>
+
+    <Button
+        android:id="@+id/simple_sketch_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/simple_sketch_two"/>
+
+ <Button
+        android:id="@+id/sensor_sketch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/sensor_sketch"/>
+
+</LinearLayout>

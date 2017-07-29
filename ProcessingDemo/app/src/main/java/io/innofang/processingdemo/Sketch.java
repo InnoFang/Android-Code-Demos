@@ -1,24 +1,42 @@
 package io.innofang.processingdemo;
 
+import android.content.Context;
+import android.util.DisplayMetrics;
+import android.view.WindowManager;
+
 import processing.core.PApplet;
 
 /**
  * Author: Inno Fang
- * Time: 2017/7/29 17:57
+ * Time: 2017/7/29 21:12
  * Description:
  */
 
-public class Sketch extends PApplet {
+
+public abstract class Sketch extends PApplet {
+
+    protected int width;
+    protected int height;
+
+    @SuppressWarnings("deprecation")
+    public Sketch(Context context) {
+
+        WindowManager wm = (WindowManager)
+                context.getSystemService(Context.WINDOW_SERVICE);
+        /*
+        width = wm.getDefaultDisplay().getWidth();
+        height = wm.getDefaultDisplay().getHeight();
+        */
+
+        DisplayMetrics dm = new DisplayMetrics();
+        wm.getDefaultDisplay().getMetrics(dm);
+        width = dm.widthPixels;
+        height = dm.heightPixels;
+
+    }
 
     public void settings() {
-        size(2000, 2000);
+        size(width, height);
     }
 
-    public void setup() { }
-
-    public void draw() {
-        if (mousePressed) {
-            ellipse(mouseX, mouseY, 50, 50);
-        }
-    }
 }
