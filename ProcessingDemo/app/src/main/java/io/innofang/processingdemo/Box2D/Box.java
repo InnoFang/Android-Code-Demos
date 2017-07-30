@@ -7,7 +7,9 @@ import org.jbox2d.dynamics.BodyDef;
 import org.jbox2d.dynamics.BodyType;
 import org.jbox2d.dynamics.FixtureDef;
 
-import processing.core.PApplet;
+import java.util.Random;
+
+import processing.core.PGraphics;
 import shiffman.box2d.Box2DProcessing;
 
 /**
@@ -17,7 +19,7 @@ import shiffman.box2d.Box2DProcessing;
  */
 
 
-public class Box extends PApplet {
+public class Box extends PGraphics {
 
     Box2DProcessing box2d;
 
@@ -32,6 +34,10 @@ public class Box extends PApplet {
         h = random(50, 100);
         // Add the box to the box2d world
         makeBody(new Vec2(x, y), w, h);
+
+        /* for PApplet
+        String var7 = this.sketchRenderer();
+        this.g = this.makeGraphics(this.width, this.height, var7, true);*/
     }
 
     void display() {
@@ -82,7 +88,8 @@ public class Box extends PApplet {
     }
 
 
- /*   Random internalRandom;
+    // for PGraphics
+    Random internalRandom;
 
     public final float random(float var1, float var2) {
         if(var1 >= var2) {
@@ -109,5 +116,5 @@ public class Box extends PApplet {
 
             return var2;
         }
-    }*/
+    }
 }
