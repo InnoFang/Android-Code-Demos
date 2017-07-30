@@ -53,7 +53,9 @@ public class MainActivity extends AppCompatActivity {
             return new Box2DSketch(this);
         } else if (getString(R.string.wallpapers_sketch).equals(stringExtra)) {
             return new WallpapersSketch(this);
-        } else if (getString(R.string.sensor_wallpapers_sketch).equals(stringExtra)) {
+        } else if (getString(R.string.compass_sketch).equals(stringExtra)) {
+            return new CompassSketch(this);
+        } else if (getString(R.string.location_sketch).equals(stringExtra)) {
             return new LocationSketch(this);
         }
         return null;

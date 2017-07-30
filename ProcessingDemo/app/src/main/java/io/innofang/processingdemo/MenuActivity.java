@@ -32,8 +32,11 @@ public class MenuActivity extends AppCompatActivity {
             case R.id.wallpapers_sketch:
                 startActivity(MainActivity.newIntent(context, getString(R.string.wallpapers_sketch)));
                 break;
-            case R.id.sensor_wallpapers_sketch:
-                startActivity(MainActivity.newIntent(context, getString(R.string.sensor_wallpapers_sketch)));
+            case R.id.compass_sketch:
+                startActivity(MainActivity.newIntent(context, getString(R.string.compass_sketch)));
+                break;
+            case R.id.location_sketch:
+                startActivity(MainActivity.newIntent(context, getString(R.string.location_sketch)));
                 break;
             default:
                 break;

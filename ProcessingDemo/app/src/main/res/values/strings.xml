@@ -5,6 +5,7 @@
     <string name="sensor_sketch">Sensor Sketch</string>
     <string name="box2d_sketch">Box2d Sketch</string>
     <string name="wallpapers_sketch">Wallpapers Sketch</string>
-    <string name="sensor_wallpapers_sketch">Sensor Wallpapers Sketch</string>
+    <string name="compass_sketch">Compass Sketch</string>
     <string name="vr_sketch">VR Sketch</string>
+    <string name="location_sketch">Location Sketch</string>
 </resources>

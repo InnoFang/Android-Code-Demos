@@ -13,7 +13,7 @@ import android.hardware.SensorManager;
  */
 
 
-public class SensorWallpapersSketch extends Sketch {
+public class CompassSketch extends Sketch {
 
     SensorListener listener;
     SensorManager manager;
@@ -27,7 +27,7 @@ public class SensorWallpapersSketch extends Sketch {
     float roll;
 
 
-    public SensorWallpapersSketch(Context context) {
+    public CompassSketch(Context context) {
         super(context);
 
         listener = new SensorListener();

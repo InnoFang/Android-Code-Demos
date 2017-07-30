@@ -44,10 +44,17 @@
         android:text="@string/wallpapers_sketch"/>
 
  <Button
-        android:id="@+id/sensor_wallpapers_sketch"
+        android:id="@+id/compass_sketch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text="@string/sensor_wallpapers_sketch"/>
+        android:text="@string/compass_sketch"/>
+
+ <Button
+        android:id="@+id/location_sketch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/location_sketch"/>
 
 </LinearLayout>
