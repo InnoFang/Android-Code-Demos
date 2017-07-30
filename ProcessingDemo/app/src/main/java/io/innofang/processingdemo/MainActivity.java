@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
             return new Box2DSketch(this);
         } else if (getString(R.string.wallpapers_sketch).equals(stringExtra)) {
             return new WallpapersSketch(this);
-        }else if (getString(R.string.sensor_wallpapers_sketch).equals(stringExtra)) {
-            return new SensorWallpapersSketch(this);
+        } else if (getString(R.string.sensor_wallpapers_sketch).equals(stringExtra)) {
+            return new LocationSketch(this);
         }
         return null;
     }

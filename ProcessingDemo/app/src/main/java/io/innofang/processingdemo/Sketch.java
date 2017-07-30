@@ -32,7 +32,6 @@ public abstract class Sketch extends PApplet {
         wm.getDefaultDisplay().getMetrics(dm);
         width = dm.widthPixels;
         height = dm.heightPixels;
-
     }
 
     public void settings() {
