@@ -3,4 +3,5 @@
     <string name="simple_sketch_one">Simple Sketch One</string>
     <string name="simple_sketch_two">Simple Sketch Two</string>
     <string name="sensor_sketch">Sensor Sketch</string>
+    <string name="box2d_sketch">Box2d Sketch</string>
 </resources>

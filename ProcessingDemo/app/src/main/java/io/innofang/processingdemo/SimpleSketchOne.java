@@ -14,10 +14,8 @@ public class SimpleSketchOne extends Sketch {
         super(context);
     }
 
-    @Override
     public void setup() {}
 
-    @Override
     public void draw() {
         if (mousePressed) {
             ellipse(mouseX, mouseY, 50, 50);

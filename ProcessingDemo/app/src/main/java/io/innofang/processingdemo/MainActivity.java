@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.widget.FrameLayout;
 
+import io.innofang.processingdemo.Box2D.Box2DSketch;
 import processing.android.PFragment;
 import processing.core.PApplet;
 
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
             return new SimpleSketchTwo(this);
         } else if (getString(R.string.sensor_sketch).equals(stringExtra)) {
             return new SensorSketch(this);
+        } else if (getString(R.string.box2d_sketch).equals(stringExtra)) {
+            return new Box2DSketch(this);
         }
         return null;
     }

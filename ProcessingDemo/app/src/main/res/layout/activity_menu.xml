@@ -29,4 +29,11 @@
         android:onClick="onClick"
         android:text="@string/sensor_sketch"/>
 
+ <Button
+        android:id="@+id/box2d_sketch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/box2d_sketch"/>
+
 </LinearLayout>

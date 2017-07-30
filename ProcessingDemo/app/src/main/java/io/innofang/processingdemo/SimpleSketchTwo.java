@@ -22,13 +22,11 @@ public class SimpleSketchTwo extends Sketch {
         fullScreen();
     }
 
-    @Override
     public void setup() {
         noStroke();
         fill(0);
     }
 
-    @Override
     public void draw() {
         background(204);
         if (mousePressed) {
