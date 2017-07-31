@@ -2,6 +2,10 @@
 
 Using Android Studio to build Processing on Android.
 
+[Download ProcessingDemo apk](https://github.com/InnoFang/Android-Code-Demos/blob/master/ProcessingDemo/apk/ProcessingDemo.apk?raw=true)
+
+If you want to build Processing on Android by using Android Studio, you must add [android-core.jar](https://github.com/InnoFang/Android-Code-Demos/blob/master/ProcessingDemo/app/libs/android-core.jar?raw=true) to your project gradle after the project has been created first.
+
 # Reference
 
  + [Reference - Processing for Android](http://android.processing.org/reference/index.html)
