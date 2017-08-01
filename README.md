@@ -64,6 +64,14 @@ This is my Android Learning Demo
 
   Android transition animations demo
 
++ OpenCVDemo
+
+  Using OpenCV for image processing on Android device.
+  
++ ProcessingDemo
+
+  Using Android Studio to build Processing on Android device.
+  
 ## LICENSE
 
  [Apache License 2.0](https://github.com/InnoFang/Android-Code-Demos/blob/master/LICENSE)
