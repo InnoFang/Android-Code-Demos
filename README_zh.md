@@ -57,22 +57,22 @@
 
   运行时权限的封装与基本使用
   
-+ [RxJava2Demo](https://github.com/InnoFang/Android-Code-Demos/tree/master/RxJava2Demo)
++ [RxJava2Demo](https://github.com/InnoFang/Android-Code-Demos/tree/master/RxJava2Demo)   
 
-    RxJava2 学习代码，并利用 RxJava2 实现了一个简单的还有三级缓存的图片加载框架 _RxImageLoader_  
-    [文章链接](https://innofang.github.io/2017/04/28/RxJava2-%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/)
+  RxJava2 学习代码，并利用 RxJava2 实现了一个简单的还有三级缓存的图片加载框架 _RxImageLoader_  
+   [文章链接](https://innofang.github.io/2017/04/28/RxJava2-%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/)
   
-+ [TransitionDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/TransitionDemo)
-
-  Android 转场动画的学习，基本实现效果
++ [TransitionDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/TransitionDemo)   
+   
+   Android 转场动画的学习，基本实现效果   
   
-+ [OpenCVDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/OpenCVDemo)
++ [OpenCVDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/OpenCVDemo)   
+   
+   在 Android 中使用 OpenCV 进行图像处理   
 
-  在 Android 中使用 OpenCV 进行图像处理
-
-+ [ProcessingDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ProcessingDemo)
-
-  使用 Android Studio 在 Android 设备中构建 processing 项目
++ [ProcessingDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ProcessingDemo)   
+   
+   使用 Android Studio 在 Android 设备中构建 processing 项目
  
 ## LICENSE
 
