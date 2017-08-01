@@ -25,10 +25,10 @@
   这个 Demo 演示了 Volley 的基本用法，同时使用了 Volley 和 [聚合数据 API](https://www.juhe.cn/) 实现了一个查询手机归属地（中国）的功能，
   并且这个案例使用了 M-V-P 模式，所以你可以你可以学习如何使用 MVP 和 Volley 构建一个应用
   
-+ [CallBackDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CallBackDemo) 
- 
-   回调的基本用法，如何在 RecyclerView 中利用回调给 item 添加点击事件，如何使用回调加载网络图片并将图片显示在 ImageView 中  
-   [文章链接](http://innofang.github.io/2017/03/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9B%9E%E8%B0%83/)
++ [CallBackDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CallBackDemo)   
+    
+     回调的基本用法，如何在 RecyclerView 中利用回调给 item 添加点击事件，如何使用回调加载网络图片并将图片显示在 ImageView 中      
+     [文章链接](http://innofang.github.io/2017/03/08/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9B%9E%E8%B0%83/)
    
 + [RecyclerViewDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/RecyclerViewDemo)
 
