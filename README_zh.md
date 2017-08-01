@@ -59,8 +59,8 @@
   
 + [RxJava2Demo](https://github.com/InnoFang/Android-Code-Demos/tree/master/RxJava2Demo)
 
-  RxJava2 学习代码，并利用 RxJava2 实现了一个简单的还有三级缓存的图片加载框架 _RxImageLoader_  
-  [文章链接](https://innofang.github.io/2017/04/28/RxJava2-%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/)
+    RxJava2 学习代码，并利用 RxJava2 实现了一个简单的还有三级缓存的图片加载框架 _RxImageLoader_  
+    [文章链接](https://innofang.github.io/2017/04/28/RxJava2-%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0/)
   
 + [TransitionDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/TransitionDemo)
 
