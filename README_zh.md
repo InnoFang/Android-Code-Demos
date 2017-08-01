@@ -65,6 +65,14 @@
 + [TransitionDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/TransitionDemo)
 
   Android 转场动画的学习，基本实现效果
+  
++ [OpenCVDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/OpenCVDemo)
+
+  在 Android 中使用 OpenCV 进行图像处理
+
++ [ProcessingDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ProcessingDemo)
+
+  使用 Android Studio 在 Android 设备中构建 processing 项目
  
 ## LICENSE
 
