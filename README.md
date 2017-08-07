@@ -20,9 +20,9 @@ This is my Android Learning Demo
 
   SQLiteAdapterDemo just show the usage of adapter in SQLite, and the SQLIteQueryDemo show how query in SQLite
 
-+ [VolleyDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/VolleyDemo)
++ [VolleyDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/VolleyDemo)    
 
-  The VolleyDemo is show the basic usage of Volley, meanwhile I use Volley and [JUHE](https://www.juhe.cn/) API to implement a function that query phone number attribution in China , and this application also use the M-V-P pattern, so you can learn how to build an application by using Volley and M-V-P pattern.
+  The VolleyDemo is show the basic usage of Volley, meanwhile I use Volley and [JUHE](https://www.juhe.cn/) API to implement a function that query phone number attribution in China , and this application also use the M-V-P pattern, so you can learn how to build an application by using Volley and M-V-P pattern.
 
 + [CallBackDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/CallBackDemo)  
 
@@ -64,6 +64,14 @@ This is my Android Learning Demo
 
   Android transition animations demo
 
++ [OpenCVDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/OpenCVDemo)
+
+  Using OpenCV for image processing on Android device.
+  
++ [ProcessingDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ProcessingDemo)
+
+  Using Android Studio to build Processing on Android device.
+  
 ## LICENSE
 
  [Apache License 2.0](https://github.com/InnoFang/Android-Code-Demos/blob/master/LICENSE)
