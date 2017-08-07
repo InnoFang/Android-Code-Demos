@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EventBusDemo</string>
+    <string name="main_activity">Main Activity</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="intent_to_second">intent to second</string>
+    <string name="send_event_message">send event message</string>
+    <string name="send_sticky_event_message">send sticky event message</string>
+    <string name="message">Hello, Main</string>
+    <string name="sticky_message">Hello, Main (Sticky)</string>
+    <string name="handle_sticky">handle Sticky</string>
+</resources>
