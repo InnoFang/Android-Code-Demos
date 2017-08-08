@@ -11,7 +11,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data
                     android:host="module_b"
-                    android:scheme="innofang"/>
+                    android:scheme="router"/>
 
             </intent-filter>
         </activity>

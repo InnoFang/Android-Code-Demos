@@ -16,7 +16,7 @@ public interface RouterModuleA {
 
     public static String ROUTER_PARAM_INFO = "info";
 
-    @RouterUri("innofang://module_a")
+    @RouterUri("router://module_a")
     public Intent newIntentFromModuleA(@RouterParam(ROUTER_PARAM_INFO) String info);
 
 }
