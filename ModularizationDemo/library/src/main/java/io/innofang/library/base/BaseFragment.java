@@ -10,7 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import io.innofang.basedemo.utils.RequestPermissions;
+import io.innofang.library.utils.RequestPermissions;
+
 
 /**
  * Author: Inno Fang

@@ -4,6 +4,8 @@ import android.content.Context;
 import android.support.annotation.StringRes;
 import android.widget.Toast;
 
+import io.innofang.library.App;
+
 // import io.innofang.myapplication.App; // 更改为自己的Application子类
 
 /**
@@ -96,7 +98,7 @@ public class Toasts {
      * <strong>App为Application子类</strong>
      * @param content
      */
-  /*  public static void showToast(String content) {
+    public static void showToast(String content) {
         long temp = System.currentTimeMillis();
         if (mToast == null) {
             mToast = Toast.makeText(App.getContext(), content, Toast.LENGTH_SHORT);
@@ -107,10 +109,10 @@ public class Toasts {
         }
         time = temp;
         mToast.show();
-    }*/
+    }
 
 
-    /*public static void showToast(@StringRes int resId) {
+    public static void showToast(@StringRes int resId) {
         long temp = System.currentTimeMillis();
         if (mToast == null) {
             mToast = Toast.makeText(App.getContext(), resId, Toast.LENGTH_SHORT);
@@ -121,5 +123,5 @@ public class Toasts {
         }
         time = temp;
         mToast.show();
-    }*/
+    }
 }
