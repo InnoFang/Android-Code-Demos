@@ -11,7 +11,7 @@ import io.innofang.library.App;
  */
 
 
-public class MDApplication extends Application {
+public class ModularizationApplication extends Application {
 
     @Override
     public void onCreate() {
