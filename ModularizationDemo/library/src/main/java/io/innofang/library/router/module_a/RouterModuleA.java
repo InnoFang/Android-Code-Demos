@@ -14,7 +14,9 @@ import io.innofang.library.router.annotation.RouterUri;
 
 public interface RouterModuleA {
 
+    public static String ROUTER_PARAM_INFO = "info";
+
     @RouterUri("innofang://module_a")
-    public Intent newIntentFromModuleA(@RouterParam("info") String info);
+    public Intent newIntentFromModuleA(@RouterParam(ROUTER_PARAM_INFO) String info);
 
 }

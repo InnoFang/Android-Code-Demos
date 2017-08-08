@@ -20,8 +20,6 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-
-        resourcePrefix "moudlea_"
     }
     buildTypes {
         release {
@@ -38,6 +36,8 @@ android {
                 manifest.srcFile 'src/main/release/AndroidManifest.xml'
             }
         }
+
+        resourcePrefix "moudlea_"
     }
 }
 

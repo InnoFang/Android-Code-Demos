@@ -8,9 +8,10 @@
     tools:context="io.innofang.modulea.ModuleAActivity">
 
     <TextView
+        android:id="@+id/info_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Moudle A"
+        android:text="Module A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
