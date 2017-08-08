@@ -22,8 +22,6 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-def androidSupportVersion = '25.3.1'
-
 ext {
     compileSdkVersion = 25
     buildToolsVersion = "25.0.3"
@@ -32,9 +30,22 @@ ext {
     versionCode = 1
     versionName = "1.0"
 
-    // dependence
-    appcompatV7 = "com.android.support:appcompat-v7:$androidSupportVersion"
-    constraintLayout = 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile = 'junit:junit:4.12'
-    gson = 'com.google.code.gson:gson:2.8.1'
+    /* Android support library */
+    constraint_layout = '1.0.2'
+    supportVersion = '25.3.1'
+
+    /* Gson */
+    gson = '2.8.1'
+
+    /* Glide */
+    glide = '4.0.0'
+
+    /* RxJava2 */
+    rxjava2 = '2.x.y'
+    rxandroid = '2.0.1'
+
+    /* Retrofit2 */
+    retrofit2 = '2.3.0'
+    converter_gson = '2.3.0'
+    adapter_rxjava = '2.3.0'
 }

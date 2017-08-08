@@ -89,6 +89,7 @@ public class RouterBus {
                 }
 
             }
+
             Uri uri = uriBuilder.build();
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             //判断这个intent是不是有效的intent

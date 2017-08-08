@@ -28,5 +28,6 @@ dependencies {
         compile project(':library')
     } else {
         compile project(':moduleA')
+        compile project(':moduleB')
     }
 }

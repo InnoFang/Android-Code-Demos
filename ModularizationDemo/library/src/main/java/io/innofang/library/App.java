@@ -15,7 +15,7 @@ public class App extends Application {
     private static Context mContext;
 
     public static Context getContext() {
-        if (null == mContext) throw new NullPointerException("mContext haven't be initialize.");
+        if (null == mContext) throw new NullPointerException("Context haven't be initialized.");
         return mContext;
     }
 
