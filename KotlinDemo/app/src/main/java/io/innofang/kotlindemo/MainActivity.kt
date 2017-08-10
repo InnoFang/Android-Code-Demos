@@ -1,9 +1,12 @@
 package io.innofang.kotlindemo
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.support.annotation.IdRes
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -12,10 +15,10 @@ class MainActivity : AppCompatActivity() {
 
     private val INITIALIZED = "initialized"
 
-    private val textView: TextView by lazy { findViewById(R.id.text_view) as TextView }
-    private val clickButton: Button by lazy { findViewById(R.id.button) as Button }
-    private val intentButton: Button by lazy { findViewById(R.id.intent_button) as Button }
-    private val rvButton: Button by lazy { findViewById(R.id.rv_button) as Button }
+    private val textView by lazy { find<TextView>(R.id.text_view) }
+    private val clickButton by lazy { find<Button>(R.id.button) }
+    private val intentButton by lazy { find<Button>(R.id.intent_button) }
+    private val rvButton by lazy { find<Button>(R.id.rv_button) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,14 +38,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         intentButton.setOnClickListener {
-            val intent = Intent(MainActivity@this, DetailActivity::class.java)
+            val intent = Intent(MainActivity@ this, DetailActivity::class.java)
             intent.putExtra("value", textView.text.toString())
             startActivity(intent)
         }
 
         rvButton.setOnClickListener {
             if (!textView.text.toString().equals(INITIALIZED)) {
-                val intent = Intent(MainActivity@this, RvActivity::class.java)
+                val intent = Intent(MainActivity@ this, RvActivity::class.java)
                 intent.putExtra("value", textView.text.toString())
                 startActivity(intent)
             } else {
@@ -52,7 +55,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    inline fun <reified T : View> Activity.find(@IdRes id: Int): T = findViewById(id) as T
+
+
     fun Context.toast(text: String = "", time: Int = Toast.LENGTH_SHORT) {
         Toast.makeText(this, text, time).show()
     }
+
 }
