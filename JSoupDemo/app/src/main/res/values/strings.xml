@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JSoupDemo</string>
+    <string name="parse_html">Parse Html</string>
+</resources>
