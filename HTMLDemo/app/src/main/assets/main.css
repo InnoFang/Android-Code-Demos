@@ -1,5 +1,4 @@
-/*
-.btn {
+.btn1 {
             display: block;
             position: relative;
             background: #aaa;
@@ -9,8 +8,7 @@
             text-decoration: none;
             cursor: pointer;
         }
-*/
-.btn {
+.btn2 {
         width: 100px;
         height: 30px;
         font-size: 18px;
@@ -27,3 +25,8 @@
         color: #fff;
         text-shadow: 1px 1px 0.5px #22629B;
     }
+
+._a{
+    color: #00ff00;
+    background-color: #ffff85;
+}
