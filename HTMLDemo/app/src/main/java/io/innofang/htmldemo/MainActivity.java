@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 mWebView.loadUrl("javascript:javaCallJSWithArgs(" + "'hello world'" + ")");
                 break;
             case R.id.call_js_to_change_color_button:
-                mWebView.loadUrl("javascript:changeColor(" + ColorUtil.getRandColorCode() + ")");
+                mWebView.loadUrl("javascript:changeColor('" + ColorUtil.getRandColorCode() + "')");
                 break;
         }
     }

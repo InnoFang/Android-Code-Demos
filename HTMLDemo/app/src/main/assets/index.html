@@ -1,6 +1,18 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <style type="text/css">
+        .btn {
+            display: block;
+            position: relative;
+            background: #aaa;
+            padding: 5px;
+            float: left;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
     <script type="text/javascript">
         document.write("Hello World");
 
@@ -24,9 +36,9 @@ HTML Content<br/>
     <div id="content">Display Content</div>
 </h1>
 <a onclick="window.android.showDialog(100, 100, '标题', true)">Click to show dialog</a><br/><br/>
-<input type="button" value="Click to call Java code"
+<input class="btn" type="button" value="Click to call Java code"
        onclick="window.android.startFunction()"><br/><br/>
-<input type="button" value="Click to call Java code with arguments"
+<input class="btn" type="button" value="Click to call Java code with arguments"
        onclick="window.android.startFunction('hello world')"/><br/>
 </body>
 </html>
