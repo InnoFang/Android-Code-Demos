@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HTMLDemo</string>
+    <string name="android">Android</string>
+    <string name="call_js">Call JS</string>
+    <string name="call_js_with_args">Call JS with args</string>
+    <string name="web_view">WebView</string>
+    <string name="call_js_to_change_color">Call JS to change color</string>
+</resources>

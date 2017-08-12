@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <script type="text/javascript">
+        document.write("Hello World");
+
+        function javaCallJS() {
+            document.getElementById("content").innerHTML = "JAVA call JS without args";
+        }
+
+        function javaCallJSWithArgs(arg) {
+            document.getElementById("content").innerHTML = (arg)
+        }
+
+        function changeColor(color) {
+           document.body.style.backgroundColor = color;
+        }
+
+    </script>
+</head>
+<body>
+HTML Content<br/>
+<h1>
+    <div id="content">Display Content</div>
+</h1>
+<a onclick="window.android.showDialog(100, 100, '标题', true)">Click to show dialog</a><br/><br/>
+<input type="button" value="Click to call Java code"
+       onclick="window.android.startFunction()"><br/><br/>
+<input type="button" value="Click to call Java code with arguments"
+       onclick="window.android.startFunction('hello world')"/><br/>
+</body>
+</html>
