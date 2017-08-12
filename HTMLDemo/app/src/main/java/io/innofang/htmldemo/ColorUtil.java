@@ -12,11 +12,11 @@ import java.util.Random;
 public class ColorUtil {
 
     /**
-     * generate random color code
+     * generate random hex color code
      *
-     * @return color code
+     * @return hex color code
      */
-    public static String getRandColorCode() {
+    public static String generateRandomHexColorCode() {
         String r, g, b;
         Random random = new Random();
         r = Integer.toHexString(random.nextInt(256)).toUpperCase();
