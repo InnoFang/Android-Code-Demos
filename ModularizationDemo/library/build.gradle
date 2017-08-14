@@ -46,11 +46,11 @@ dependencies {
     /* Glide */
     compile "com.github.bumptech.glide:glide:$rootProject.ext.glide"                              //
     /* RxJava2 */
-    //    compile "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjava2"                          //
-    //    compile "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroid"                     //
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjava2"                          //
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroid"                     //
     /* Retrofit2 */
     compile "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit2"                          //
     compile "com.squareup.retrofit2:converter-gson:$rootProject.ext.converter_gson"               //
-    compile "com.squareup.retrofit2:adapter-rxjava:$rootProject.ext.adapter_rxjava"               //
-
+//    compile "com.squareup.retrofit2:adapter-rxjava:$rootProject.ext.adapter_rxjava"               //
+    compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$rootProject.ext.retrofit2_rxjava2_adapter"//
 }

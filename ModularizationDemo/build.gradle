@@ -47,5 +47,6 @@ ext {
     /* Retrofit2 */
     retrofit2 = '2.3.0'
     converter_gson = '2.3.0'
-    adapter_rxjava = '2.3.0'
+//    adapter_rxjava = '2.3.0'
+    retrofit2_rxjava2_adapter = '1.0.0'
 }
