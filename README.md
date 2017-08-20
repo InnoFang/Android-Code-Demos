@@ -72,9 +72,11 @@ This is my Android Learning Demo
 
   Using Android Studio to build Processing on Android device.
   
-+ [ModularizationDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ModularizationDemo) &nbsp;&nbsp; [ARouterDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ARouterDemo)
++ [ModularizationDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ModularizationDemo) &nbsp;&nbsp; [ARouterDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ARouterDemo)    
 
-  Modular development
+   
+   Modular development  
+  
   
 ## LICENSE
 
