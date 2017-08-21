@@ -76,13 +76,19 @@ This is my Android Learning Demo
 
   Modular development  
   
-+ [HTMLDemo]
++ [HTMLDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/HTMLDemo)
 
   Java interacts with JavaScript
   
-+ [JSoupDemo]
++ [JSoupDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/JSoupDemo)
 
   Use JSoup to parse HTML and get content 
+  
++ [EventBusDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/EventBusDemo)
+
+  Demonstrates the use of EventBus
+  
+------
   
 ## LICENSE
 
