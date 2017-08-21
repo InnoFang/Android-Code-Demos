@@ -74,10 +74,16 @@ This is my Android Learning Demo
   
 + [ModularizationDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ModularizationDemo) &nbsp;&nbsp; [ARouterDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ARouterDemo)    
 
-   
-   Modular development  
+  Modular development  
   
++ [HTMLDemo]
+
+  Java interacts with JavaScript
   
++ [JSoupDemo]
+
+  Use JSoup to parse HTML and get content 
+  
 ## LICENSE
 
  [Apache License 2.0](https://github.com/InnoFang/Android-Code-Demos/blob/master/LICENSE)
