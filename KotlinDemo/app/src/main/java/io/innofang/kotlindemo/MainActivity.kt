@@ -15,10 +15,23 @@ class MainActivity : AppCompatActivity() {
 
     private val INITIALIZED = "initialized"
 
-    private val textView by lazy { find<TextView>(R.id.text_view) }
+    private val textView by lazy {
+        find<TextView>(R.id.text_view).apply {
+            text = INITIALIZED
+        }
+    }
+
     private val clickButton by lazy { find<Button>(R.id.button) }
     private val intentButton by lazy { find<Button>(R.id.intent_button) }
     private val rvButton by lazy { find<Button>(R.id.rv_button) }
+
+    private val onClickListener = View.OnClickListener {
+        when (it.id) {
+            R.id.button -> normalClickListener()
+            R.id.intent_button -> intentClickListener()
+            R.id.rv_button -> rvClickListener()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,30 +41,40 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initEvent() {
-        textView.text = INITIALIZED
-        clickButton.text = "Click Me"
-        clickButton.setOnClickListener {
-            if (textView.text.equals(INITIALIZED))
-                textView.text = "0"
-            else
-                textView.text = (Integer.valueOf(textView.text.toString()) + 1).toString()
+
+        with(clickButton) {
+            text = "Click Me"
+            setOnClickListener(onClickListener)
         }
 
-        intentButton.setOnClickListener {
-            val intent = Intent(MainActivity@ this, DetailActivity::class.java)
-            intent.putExtra("value", textView.text.toString())
-            startActivity(intent)
-        }
+        intentButton.setOnClickListener(onClickListener)
 
-        rvButton.setOnClickListener {
-            if (!textView.text.toString().equals(INITIALIZED)) {
-                val intent = Intent(MainActivity@ this, RvActivity::class.java)
-                intent.putExtra("value", textView.text.toString())
-                startActivity(intent)
-            } else {
-                toast("Do not have the number")
+        rvButton.setOnClickListener(onClickListener)
+    }
+
+    fun normalClickListener() {
+        if (textView.text == INITIALIZED)
+            textView.text = "0"
+        else
+            textView.text = (Integer.valueOf(textView.text.toString()) + 1).toString()
+    }
+
+    fun intentClickListener() {
+        val intent = Intent(MainActivity@ this, DetailActivity::class.java).apply {
+            putExtra("value", textView.text.toString())
+        }
+        startActivity(intent)
+    }
+
+    fun rvClickListener() {
+        if (textView.text.toString() != INITIALIZED) {
+            with(Intent(MainActivity@ this, RvActivity::class.java)){
+                putExtra("value", textView.text.toString())
+            }.let {
+                startActivity(it)
             }
-
+        } else {
+            toast("Do not have the number")
         }
     }
 
