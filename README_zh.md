@@ -75,7 +75,25 @@
                      
    使用 Android Studio 在 Android 设备中构建 processing 项目
              
-             
++ [ModularizatinoDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ModularizationDemo) &nbsp;&nbsp; [ARouterDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/ARouterDemo)             
+
+   组件化的出现，使得项目的开发更易于多人协作，做到高内聚，低耦合，模块与模块之间相互独立，并且每个模块可以单独编译，其原理是使用 Gradle 进行管理。 ModularizationDemo 中演示了组件化开发中 Gradle 的基本配置，并且实现了一个简单的路由，用于页面跳转与数据传递。ARouter 是由阿里开源的一款用于组件化开发模块间跳转、数据传递的路由框架。ARouterDemo 演示了如何配置与基本的页面路由跳转以及数据传递。
+   
++ [HTMLDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/HTMLDemo)
+
+   HTMLDemo 不是用于演示关于 HTML 的编写，而是演示如何在 Android 中借助 WebView 使用 HTML 加载页面，并且还演示了 Java 与 JavaScript 的交互，如函数调用。
+   
++ [JSoupDDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/JSoupDemo)
+
+   当想解析某一网页的数据时，而有苦于没有特定的 api 的话，此时就可以尝试一下 [jsoup](https://github.com/jhy/jsoup)，这一个用于 Java 解析 HTML 的第三方框架。JSoupDemo 中演示了如何简单解析自己博客的的首页数据。
+
++ [EventBusDemo](https://github.com/InnoFang/Android-Code-Demos/tree/master/EventBusDemo)
+
+   演示 EventBus 的基本使用
+   
+-----    
+
+
 ## LICENSE
 
 [Apache License 2.0](https://github.com/InnoFang/Android-Code-Demos/blob/master/LICENSE)
