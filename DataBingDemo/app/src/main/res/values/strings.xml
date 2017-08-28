@@ -6,6 +6,7 @@
     <string name="delete_item">Delete Item</string>
     <string name="go_to_expression">Go to Expression</string>
     <string name="welcome">hello %s</string>
+    <string name="password">Password: %s</string>
     <string name="go_to_two_way">Go to Two Way</string>
     <string name="go_to_lambda">Go to Lambda</string>
     <string name="go_to_animation">Go to Animation</string>

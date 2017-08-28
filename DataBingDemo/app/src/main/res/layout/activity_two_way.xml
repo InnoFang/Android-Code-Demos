@@ -3,9 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
+
+        <import type="com.innofang.databingdemo.FormModel"/>
+
         <variable
             name="model"
-            type="com.innofang.databingdemo.FormModel"/>
+            type="FormModel"/>
     </data>
 
     <LinearLayout
@@ -15,10 +18,10 @@
         android:orientation="vertical">
 
         <EditText
-            android:text="@={model.name}"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:inputType="textNoSuggestions"
-            android:layout_height="wrap_content"/>
+            android:text="@={model.name}"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -27,8 +30,13 @@
             android:text="@={model.password}"/>
 
         <Button
-            android:text="@{@string/welcome(model.name)}"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{@string/welcome(model.name)}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@{@string/password(model.password)}"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 

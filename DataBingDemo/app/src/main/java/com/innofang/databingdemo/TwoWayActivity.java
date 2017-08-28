@@ -20,8 +20,16 @@ public class TwoWayActivity extends AppCompatActivity {
         mBinding.setModel(formModel);
         formModel.addOnPropertyChangedCallback(new Observable.OnPropertyChangedCallback() {
             @Override
-            public void onPropertyChanged(Observable observable, int i) {
-                Toast.makeText(TwoWayActivity.this, String.valueOf(i), Toast.LENGTH_SHORT).show();
+            public void onPropertyChanged(Observable observable, int id/* Model 中 BR 属性的 id 值 */) {
+                switch (id) {
+                    case BR.name:
+                        Toast.makeText(TwoWayActivity.this, "BR.name: " + id, Toast.LENGTH_SHORT).show();
+                        break;
+                    case BR.password:
+                        Toast.makeText(TwoWayActivity.this, "BR.password: " + id, Toast.LENGTH_SHORT).show();
+                        break;
+                }
+
             }
         });
     }
