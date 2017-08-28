@@ -15,21 +15,18 @@ class MainActivity : AppCompatActivity() {
 
     private val INITIALIZED = "initialized"
 
-    private val textView by lazy {
-        find<TextView>(R.id.text_view).apply {
-            text = INITIALIZED
-        }
-    }
-
-    private val clickButton by lazy { find<Button>(R.id.button) }
-    private val intentButton by lazy { find<Button>(R.id.intent_button) }
-    private val rvButton by lazy { find<Button>(R.id.rv_button) }
+    private lateinit var textView: TextView
+    private lateinit var clickButton: Button
+    private lateinit var intentButton: Button
+    private lateinit var rvButton: Button
 
     private val onClickListener = View.OnClickListener {
         when (it.id) {
             R.id.button -> normalClickListener()
             R.id.intent_button -> intentClickListener()
             R.id.rv_button -> rvClickListener()
+            else -> throw UnsupportedOperationException(
+                    "OnClick has not been implemented for " + resources.getResourceName(it.id))
         }
     }
 
@@ -42,14 +39,22 @@ class MainActivity : AppCompatActivity() {
 
     private fun initEvent() {
 
-        with(clickButton) {
+        textView = find<TextView>(R.id.text_view).apply {
+            text = INITIALIZED
+        }
+
+        clickButton = find<Button>(R.id.button).apply {
             text = "Click Me"
             setOnClickListener(onClickListener)
         }
 
-        intentButton.setOnClickListener(onClickListener)
+        intentButton = find<Button>(R.id.intent_button).apply {
+            setOnClickListener(onClickListener)
+        }
 
-        rvButton.setOnClickListener(onClickListener)
+        rvButton = find<Button>(R.id.rv_button).apply {
+            setOnClickListener(onClickListener)
+        }
     }
 
     fun normalClickListener() {
@@ -68,7 +73,7 @@ class MainActivity : AppCompatActivity() {
 
     fun rvClickListener() {
         if (textView.text.toString() != INITIALIZED) {
-            with(Intent(MainActivity@ this, RvActivity::class.java)){
+            with(Intent(MainActivity@ this, RvActivity::class.java)) {
                 putExtra("value", textView.text.toString())
             }.let {
                 startActivity(it)

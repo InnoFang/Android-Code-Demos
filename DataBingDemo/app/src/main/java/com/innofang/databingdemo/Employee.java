@@ -42,12 +42,12 @@ public class Employee extends BaseObservable {
 
     public void setFirstName(String firstName) {
         mFirstName = firstName;
-        notifyPropertyChanged(BR.firstName);
+        notifyPropertyChanged(com.innofang.databingdemo.BR.firstName);
     }
 
     public void setLastName(String lastName) {
         mLastName = lastName;
-        notifyPropertyChanged(BR.lastName);
+        notifyPropertyChanged(com.innofang.databingdemo.BR.lastName);
     }
 
     public ObservableBoolean getIsFired() {

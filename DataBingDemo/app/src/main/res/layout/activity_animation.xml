@@ -6,9 +6,11 @@
 
         <import type="android.view.View"/>
 
+        <import type="com.innofang.databingdemo.AnimationActivity.Presenter"/>
+
         <variable
             name="presenter"
-            type="com.innofang.databingdemo.AnimationActivity.Presenter"/>
+            type="Presenter"/>
 
         <variable
             name="showImage"
