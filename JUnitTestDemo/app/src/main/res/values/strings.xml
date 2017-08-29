@@ -14,5 +14,5 @@
     <string name="mul">*</string>
     <string name="_0">0</string>
     <string name="equal">=</string>
-    <string name="sub">/</string>
+    <string name="sub">\\</string>
 </resources>

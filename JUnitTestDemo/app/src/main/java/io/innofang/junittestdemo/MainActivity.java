@@ -45,23 +45,33 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, "Equation cannot be empty!", Toast.LENGTH_SHORT).show();
                     break;
                 }
-                String[] token = result.getText().toString().split("\\+|-|\\*|\\\\");
-                int a = Integer.parseInt(token[0]);
-                int b = Integer.parseInt(token[2]);
-                switch (token[1].charAt(0)) {
-                    case '+':
-                        result.setText(CalculateUtil.add(a, b));
-                        break;
-                    case '-':
-                        result.setText(CalculateUtil.div(a, b));
-                        break;
-                    case '*':
-                        result.setText(CalculateUtil.mul(a, b));
-                        break;
-                    case '\\':
-                        result.setText(String.valueOf(CalculateUtil.sub(a, b)));
-                        break;
+                try {
+                    String[] token = result.getText().toString().split("\\+|-|\\*|\\\\");
+                    int a = Integer.parseInt(token[0]);
+                    int b = Integer.parseInt(token[1]);
+                    for (String operator : result.getText().toString().split("\\w")) {
+                        if (!TextUtils.isEmpty(operator)) {
+                            switch (operator.charAt(0)) {
+                                case '+':
+                                    result.setText(String.valueOf(CalculateUtil.add(a, b)));
+                                    break;
+                                case '-':
+                                    result.setText(String.valueOf(CalculateUtil.div(a, b)));
+                                    break;
+                                case '*':
+                                    result.setText(String.valueOf(CalculateUtil.mul(a, b)));
+                                    break;
+                                case '\\':
+                                    result.setText(String.valueOf(CalculateUtil.sub(a, b)));
+                                    break;
+                            }
+                        }
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
+
                 break;
             case R.id.result_text_view:
                 result.setText("");
