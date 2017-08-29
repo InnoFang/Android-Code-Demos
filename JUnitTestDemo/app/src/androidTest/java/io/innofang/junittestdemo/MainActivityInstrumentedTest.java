@@ -52,6 +52,16 @@ public class MainActivityInstrumentedTest {
         onView(withId(R.id.result_text_view)).check(matches(withText(result)));
 
         onView(withId(R.id.result_text_view)).perform(click());
+        onView(withText("6")).perform(click());
+        onView(withText("4")).perform(click());
+        onView(withText("/")).perform(click());
+        onView(withText("3")).perform(click());
+        onView(withText("2")).perform(click());
+        onView(withText("=")).perform(click());
+        result = String.valueOf(64 / 32 * 1.0);
+        onView(withId(R.id.result_text_view)).check(matches(withText(result)));
+
+        onView(withId(R.id.result_text_view)).perform(click());
 
 
     }

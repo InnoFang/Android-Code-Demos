@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
                 try {
-                    String[] token = result.getText().toString().split("\\+|-|\\*|\\\\");
+                    String[] token = result.getText().toString().split("\\+|-|\\*|/");
                     int a = Integer.parseInt(token[0]);
                     int b = Integer.parseInt(token[1]);
                     for (String operator : result.getText().toString().split("\\w")) {
@@ -61,10 +61,11 @@ public class MainActivity extends AppCompatActivity {
                                 case '*':
                                     result.setText(String.valueOf(CalculateUtil.mul(a, b)));
                                     break;
-                                case '\\':
+                                case '/':
                                     result.setText(String.valueOf(CalculateUtil.sub(a, b)));
                                     break;
                             }
+                            break;
                         }
                     }
 
