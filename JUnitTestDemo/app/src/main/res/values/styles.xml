@@ -15,6 +15,7 @@
         <item name="android:background">@drawable/bg_button</item>
         <item name="android:layout_margin">3dp</item>
         <item name="android:gravity">center</item>
+        <item name="android:onClick">onClick</item>
     </style>
 
     <style name="NumberButtonStyle" parent="ButtonStyle">
