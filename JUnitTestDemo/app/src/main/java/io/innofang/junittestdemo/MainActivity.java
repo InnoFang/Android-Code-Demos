@@ -13,21 +13,6 @@ import io.innofang.junittestdemo.utils.CalculateUtil;
 public class MainActivity extends AppCompatActivity {
 
     private TextView result;
-    private Button _0,
-            _1,
-            _2,
-            _3,
-            _4,
-            _5,
-            _6,
-            _7,
-            _8,
-            _9,
-            add,
-            div,
-            mul,
-            sub,
-            equal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,21 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         result = (TextView) findViewById(R.id.result_text_view);
-        _0 = (Button) findViewById(R.id._0);
-        _1 = (Button) findViewById(R.id._1);
-        _2 = (Button) findViewById(R.id._2);
-        _3 = (Button) findViewById(R.id._3);
-        _4 = (Button) findViewById(R.id._4);
-        _5 = (Button) findViewById(R.id._5);
-        _6 = (Button) findViewById(R.id._6);
-        _7 = (Button) findViewById(R.id._7);
-        _8 = (Button) findViewById(R.id._8);
-        _9 = (Button) findViewById(R.id._9);
-        add = (Button) findViewById(R.id.add);
-        div = (Button) findViewById(R.id.div);
-        mul = (Button) findViewById(R.id.mul);
-        sub = (Button) findViewById(R.id.sub);
-        equal = (Button) findViewById(R.id.equal);
     }
 
     public void onClick(View view) {
