@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".sliding_menu.SlidingMenuActivity">
+        </activity>
     </application>
 
 </manifest>

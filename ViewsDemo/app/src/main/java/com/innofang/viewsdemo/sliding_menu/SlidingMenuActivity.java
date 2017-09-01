@@ -1,0 +1,39 @@
+package com.innofang.viewsdemo.sliding_menu;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+
+import com.innofang.viewsdemo.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SlidingMenuActivity extends AppCompatActivity {
+
+    private RecyclerView mRecyclerView;
+    private List<String> mData = new ArrayList<>();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sliding_menu);
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        init();
+    }
+
+    private void init() {
+        for (int i = 0; i < 20; i++) {
+            mData.add("置顶");
+        }
+        SlidingMenuAdapter adapter = new SlidingMenuAdapter(mData, this);
+        adapter.setOnMenuClickListener(new SlidingMenuAdapter.OnMenuClickListener() {
+            @Override
+            public void onClick(int position, boolean top) {
+                mData.set(position, top ? "取消置顶" : "置顶");
+            }
+        });
+        mRecyclerView.setAdapter(adapter);
+    }
+}

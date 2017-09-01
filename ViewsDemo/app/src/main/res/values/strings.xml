@@ -23,4 +23,5 @@
     <string name="region_click_view">RegionClickView</string>
     <string name="clock_view">ClockView</string>
     <string name="spider_net_view">SpiderNetView</string>
+    <string name="sliding_menu">Sliding Menu</string>
 </resources>

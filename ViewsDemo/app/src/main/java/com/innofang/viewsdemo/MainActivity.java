@@ -1,5 +1,6 @@
 package com.innofang.viewsdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -11,6 +12,7 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 
+import com.innofang.viewsdemo.sliding_menu.SlidingMenuActivity;
 import com.innofang.viewsdemo.views.Bezier3View;
 import com.innofang.viewsdemo.views.BezierHeartView;
 import com.innofang.viewsdemo.views.PolyToPolyView;
@@ -73,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.spider_net_view:
                 setContentView(R.layout.view_spider_net);
+                break;
+            case R.id.sliding_menu:
+                startActivity(new Intent(this, SlidingMenuActivity.class));
                 break;
             default:
                 break;

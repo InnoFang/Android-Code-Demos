@@ -57,4 +57,7 @@
     <item
         android:id="@+id/spider_net_view"
         android:title="@string/spider_net_view"/>
+    <item
+        android:id="@+id/sliding_menu"
+        android:title="@string/sliding_menu"/>
 </menu>
