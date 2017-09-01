@@ -25,7 +25,15 @@
 
                 <ImageView
                     android:id="@+id/image_view"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="70dp"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_dark"
                     android:layout_height="70dp"
                     />
             </LinearLayout>
@@ -57,10 +65,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="item 底部备注 ..."
         android:background="@color/colorAccent"
-        android:textColor="#fff"
         android:gravity="center"
+        android:text="item 底部备注 ..."
+        android:textColor="#fff"
         />
 
 </LinearLayout>
