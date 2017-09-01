@@ -24,4 +24,8 @@
     <string name="clock_view">ClockView</string>
     <string name="spider_net_view">SpiderNetView</string>
     <string name="sliding_menu">Sliding Menu</string>
+    <string name="cancel_top">cancel top</string>
+    <string name="top">top</string>
+    <string name="long_click">Long Click</string>
+    <string name="other_information">other information</string>
 </resources>

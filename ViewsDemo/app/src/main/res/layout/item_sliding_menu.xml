@@ -51,7 +51,7 @@
                     android:layout_height="match_parent"
                     android:background="@android:color/darker_gray"
                     android:gravity="center"
-                    android:text="置顶"
+                    android:text="@string/top"
                     android:textColor="#fff"
                     />
 
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:gravity="center"
-        android:text="item 底部备注 ..."
+        android:text="@string/other_information"
         android:textColor="#fff"
         />
 

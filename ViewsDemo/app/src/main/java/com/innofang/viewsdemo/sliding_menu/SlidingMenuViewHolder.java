@@ -20,7 +20,8 @@ public class SlidingMenuViewHolder extends RecyclerView.ViewHolder {
 
     TextView menuText;
     ImageView imageView;
-    boolean top;
+    SlidingMenuAdapter adapter;
+    boolean top = false;
 
     public SlidingMenuViewHolder(View itemView) {
         super(itemView);
@@ -29,23 +30,22 @@ public class SlidingMenuViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bindHolder(final SlidingMenuAdapter adapter, String text) {
+        this.adapter = adapter;
         imageView.setBackgroundColor(Color.GREEN);
         menuText.setText(text);
-        menuText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                adapter.onCloseMenu();
-                if (menuText.getText().toString().equals("置顶")) {
-                    menuText.setText("取消置顶");
-                    imageView.setBackgroundColor(Color.YELLOW);
-                    top = true;
-                } else {
-                    menuText.setText("置顶");
-                    imageView.setBackgroundColor(Color.GREEN);
-                    top = false;
-                }
-            }
-        });
+    }
+
+    public void changeMenuMode() {
+        adapter.onCloseMenu();
+        if (!top) {
+            menuText.setText(R.string.cancel_top);
+            imageView.setBackgroundColor(Color.YELLOW);
+            top = true;
+        } else {
+            menuText.setText(R.string.top);
+            imageView.setBackgroundColor(Color.GREEN);
+            top = false;
+        }
     }
 
     public boolean isTop() {
@@ -64,4 +64,7 @@ public class SlidingMenuViewHolder extends RecyclerView.ViewHolder {
         return menuText.getText().toString();
     }
 
+    public void setOnMenuClickListener(View.OnClickListener listener) {
+         menuText.setOnClickListener(listener);
+    }
 }
