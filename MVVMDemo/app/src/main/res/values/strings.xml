@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVVMDemo</string>
+    <string name="sign_in_failed">Sign in failed.</string>
+    <string name="sign_in_succeed">Sign in succeed.</string>
+    <string name="please_input_username">Please input username</string>
+    <string name="please_input_password">Please input password</string>
+    <string name="sign_in">Sign in</string>
+</resources>
