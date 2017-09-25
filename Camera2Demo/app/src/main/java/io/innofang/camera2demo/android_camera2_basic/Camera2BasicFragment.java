@@ -1,4 +1,4 @@
-package io.innofang.camera2demo;
+package io.innofang.camera2demo.android_camera2_basic;
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -53,6 +53,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
+
+import io.innofang.camera2demo.R;
 
 public class Camera2BasicFragment extends Fragment
         implements View.OnClickListener, FragmentCompat.OnRequestPermissionsResultCallback {

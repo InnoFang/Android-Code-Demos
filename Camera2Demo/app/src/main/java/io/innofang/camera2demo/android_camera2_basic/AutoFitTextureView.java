@@ -1,4 +1,4 @@
-package io.innofang.camera2demo;
+package io.innofang.camera2demo.android_camera2_basic;
 
 import android.content.Context;
 import android.util.AttributeSet;

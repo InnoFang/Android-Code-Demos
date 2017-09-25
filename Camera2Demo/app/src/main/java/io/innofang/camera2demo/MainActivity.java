@@ -1,19 +1,23 @@
 package io.innofang.camera2demo;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
 
-public class MainActivity extends AppCompatActivity {
+import io.innofang.camera2demo.my_camera2.MyCamera2Fragment;
+
+public class MainActivity extends FragmentContainerActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        if (null == savedInstanceState) {
-            getFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, Camera2BasicFragment.newInstance())
-                    .commit();
-        }
+    protected Fragment createFragment() {
+        return MyCamera2Fragment.newInstance();
     }
 
+    @Override
+    protected int getLayoutResId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected int getFragmentContainerId() {
+        return R.id.fragment_container;
+    }
 }
