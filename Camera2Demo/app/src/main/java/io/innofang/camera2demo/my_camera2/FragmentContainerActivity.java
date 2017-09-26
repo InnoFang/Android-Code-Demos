@@ -1,4 +1,4 @@
-package io.innofang.camera2demo;
+package io.innofang.camera2demo.my_camera2;
 
 import android.os.Bundle;
 import android.support.annotation.IdRes;

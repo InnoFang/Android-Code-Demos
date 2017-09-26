@@ -3,9 +3,11 @@
           package="io.innofang.camera2demo">
 
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera2.full"/>
 
     <application
         android:allowBackup="true"
@@ -16,7 +18,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".android_camera2_basic.CameraActivity">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".my_camera2.MainActivity">
+
+        </activity>
+        <activity android:name=".camera2_api.AndroidCameraApi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

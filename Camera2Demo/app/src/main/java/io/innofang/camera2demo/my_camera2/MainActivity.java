@@ -1,8 +1,8 @@
-package io.innofang.camera2demo;
+package io.innofang.camera2demo.my_camera2;
 
 import android.support.v4.app.Fragment;
 
-import io.innofang.camera2demo.my_camera2.MyCamera2Fragment;
+import io.innofang.camera2demo.R;
 
 public class MainActivity extends FragmentContainerActivity {
 
