@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="F:\android-sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="F:\repositories\Android-Code\xinlv\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0_d9191ab7d7f5bf79daa66d3d7210e97a47446a14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\repositories\Android-Code\xinlv\app\libs\achartengine-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b2bb0af9f390c0edd4d7d95f613f38da3abe0144">
+        <dex dex="F:\repositories\Android-Code\xinlv\app\build\intermediates\pre-dexed\debug\achartengine-1.0.0_c6dd486e6774b6ba3e94cbe0a99e31236bdbbf19.jar" />
+    </item>
+
+</items>
