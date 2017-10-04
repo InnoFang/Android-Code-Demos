@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    defaultConfig {
+        applicationId "io.innofang.greendaodemo"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'io.innofang.greendaodemo.dao' //这个是生成代码保存的包名
+        targetGenDir 'src/main/java' //保存到java代码路径
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:' + rootProject.supportVersion //
+    compile 'com.android.support.constraint:constraint-layout:' + rootProject.constraint_layout//
+    compile 'org.greenrobot:greendao:' + rootProject.greendao// add library
+    compile 'org.greenrobot:greendao-generator:' + rootProject.greendao// add library
+    testCompile 'junit:junit:4.12'
+}
