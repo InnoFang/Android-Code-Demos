@@ -1,105 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86_64,x86"
-    api-level="24"
-    build-mode="FULL"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="25"
+    build-mode="COLD"
     density="420dpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1489819807764"
-    token="5772791901712860622"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="1509526017151"
+    token="4126111070875246884"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1178" />
+        duration="141" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="396" />
+        duration="16" />
     <task
         name="verifier"
-        duration="180" />
+        duration="5" />
 
     <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="F:\repositories\Apps\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1489819807764"
+        timestamp="1509525989383"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="F:\repositories\Apps\app\build\outputs\apk\app-debug.apk"
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1509526017151"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="F:\repositories\Android-Code\CallBackDemo\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

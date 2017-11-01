@@ -1,7 +1,7 @@
-#Sat Mar 18 14:50:16 CST 2017
-base.0=F\:\\repositories\\Apps\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d39680a2c31212bf55e109dfba7af86285146ff2
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=F\:\\repositories\\Apps\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ae45b2200322a245b0dd574a24793b5b962df08e\\classes.dex
-base.1=F\:\\repositories\\Apps\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ae45b2200322a245b0dd574a24793b5b962df08e
-file.0=F\:\\repositories\\Apps\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d39680a2c31212bf55e109dfba7af86285146ff2\\classes.dex
+#Wed Nov 01 16:45:21 CST 2017
+base.0=F\:\\repositories\\Android-Code\\CallBackDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8e1918aa948361aba8e846f6d022f0aabce66cfa
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=F\:\\repositories\\Android-Code\\CallBackDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_463a3b97a8e26353e96f6d6dcb8551a25ebeea11\\classes.dex
+base.1=F\:\\repositories\\Android-Code\\CallBackDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_463a3b97a8e26353e96f6d6dcb8551a25ebeea11
+file.0=F\:\\repositories\\Android-Code\\CallBackDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8e1918aa948361aba8e846f6d022f0aabce66cfa\\classes.dex

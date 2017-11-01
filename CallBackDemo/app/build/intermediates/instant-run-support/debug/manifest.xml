@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.innofang.apps"
+    package="com.innofang.callbackdemo"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -17,16 +17,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.innofang.apps.MainActivity" >
+        <activity android:name="com.innofang.callbackdemo.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.innofang.apps.call_back_demo_2.LoadeImageActivity" >
+        <activity android:name="com.innofang.callbackdemo.call_back_demo_2.LoadImageActivity" >
         </activity>
-        <activity android:name="com.innofang.apps.call_back_demo_1.ClickRecyclerViewActivity" >
+        <activity android:name="com.innofang.callbackdemo.call_back_demo_1.ClickRecyclerViewActivity" >
         </activity>
 
         <service

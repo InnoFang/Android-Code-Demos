@@ -1,24 +1,24 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:3:11-38
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:3:11-46
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:5:5-66
 	android:name
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:7:5-25:19
+ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:7:5-25:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\machenike\.android\build-cache\29bed9f33e22bf6045e2a8fed2ac7e1ef3bd7d67\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.1.1] C:\Users\machenike\.android\build-cache\e777349655b399cb8250cbafd0ca12f42c22a494\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\machenike\.android\build-cache\d7bc95852ded4ef1e3e3d36f907ecef0ce7ffe40\output\AndroidManifest.xml:25:5-20
@@ -32,41 +32,41 @@ MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\machenike\.and
 MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\machenike\.android\build-cache\43836ac16c3d5e14573dfc2e9ccfc4024805718e\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.1.1] C:\Users\machenike\.android\build-cache\4bd89db321c3b8b9f5ce6200458c8282ed006354\output\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:10:9-41
 	android:supportsRtl
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:12:9-35
 	android:roundIcon
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:11:9-54
 	android:allowBackup
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:8:9-35
 	android:icon
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:9:9-43
 	android:theme
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:13:9-40
-activity#com.innofang.apps.MainActivity
-ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:14:9-20:20
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.innofang.callbackdemo.MainActivity
+ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:14:19-47
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:14:19-72
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:16:17-68
+ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:16:17-68
 	android:name
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:18:17-76
+ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:18:17-76
 	android:name
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:18:27-74
-activity#com.innofang.apps.call_back_demo_2.LoadeImageActivity
-ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:21:9-22:20
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.innofang.callbackdemo.call_back_demo_2.LoadImageActivity
+ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:21:9-22:20
 	android:name
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:21:19-70
-activity#com.innofang.apps.call_back_demo_1.ClickRecyclerViewActivity
-ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:23:9-24:20
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:21:19-94
+activity#com.innofang.callbackdemo.call_back_demo_1.ClickRecyclerViewActivity
+ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:23:9-24:20
 	android:name
-		ADDED from F:\repositories\Apps\app\src\main\AndroidManifest.xml:23:19-77
+		ADDED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml:23:19-102
 uses-sdk
-INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\machenike\.android\build-cache\29bed9f33e22bf6045e2a8fed2ac7e1ef3bd7d67\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:25.1.1] C:\Users\machenike\.android\build-cache\e777349655b399cb8250cbafd0ca12f42c22a494\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\machenike\.android\build-cache\d7bc95852ded4ef1e3e3d36f907ecef0ce7ffe40\output\AndroidManifest.xml:21:5-23:78
@@ -83,8 +83,8 @@ MERGED from [com.android.support:support-compat:25.1.1] C:\Users\machenike\.andr
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.1.1] C:\Users\machenike\.android\build-cache\e777349655b399cb8250cbafd0ca12f42c22a494\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
-		INJECTED from F:\repositories\Apps\app\src\main\AndroidManifest.xml
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml
+		INJECTED from F:\repositories\Android-Code\CallBackDemo\app\src\main\AndroidManifest.xml

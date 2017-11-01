@@ -1,4 +1,4 @@
-#Sat Mar 18 14:50:16 CST 2017
-base.0=F\:\\repositories\\Apps\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0
+#Wed Nov 01 16:45:20 CST 2017
+base.0=F\:\\repositories\\Android-Code\\CallBackDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0
 renamed.0=classes.dex
-file.0=F\:\\repositories\\Apps\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0\\classes.dex
+file.0=F\:\\repositories\\Android-Code\\CallBackDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0\\classes.dex

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.innofang.apps.call_back_demo_1.ClickRecyclerViewActivity">
+    tools:context="com.innofang.callbackdemo.call_back_demo_1.ClickRecyclerViewActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"

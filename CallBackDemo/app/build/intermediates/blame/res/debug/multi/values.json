@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "F:\\repositories\\Apps\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "outputFile": "F:\\repositories\\Android-Code\\CallBackDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -524,7 +524,7 @@
                     "endOffset": 2060
                 },
                 "from": {
-                    "file": "F:\\repositories\\Apps\\app\\src\\main\\res\\values\\colors.xml",
+                    "file": "F:\\repositories\\Android-Code\\CallBackDemo\\app\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -543,7 +543,7 @@
                     "endOffset": 2107
                 },
                 "from": {
-                    "file": "F:\\repositories\\Apps\\app\\src\\main\\res\\values\\colors.xml",
+                    "file": "F:\\repositories\\Android-Code\\CallBackDemo\\app\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -562,7 +562,7 @@
                     "endOffset": 2158
                 },
                 "from": {
-                    "file": "F:\\repositories\\Apps\\app\\src\\main\\res\\values\\colors.xml",
+                    "file": "F:\\repositories\\Android-Code\\CallBackDemo\\app\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -5293,7 +5293,7 @@
                     "endOffset": 51887
                 },
                 "from": {
-                    "file": "F:\\repositories\\Apps\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\repositories\\Android-Code\\CallBackDemo\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 1,
                         "startColumn": 4,
@@ -5350,7 +5350,7 @@
                     "endOffset": 52232
                 },
                 "from": {
-                    "file": "F:\\repositories\\Apps\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\repositories\\Android-Code\\CallBackDemo\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -5369,7 +5369,7 @@
                     "endOffset": 52295
                 },
                 "from": {
-                    "file": "F:\\repositories\\Apps\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "F:\\repositories\\Android-Code\\CallBackDemo\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -5638,7 +5638,7 @@
                     "endOffset": 54195
                 },
                 "from": {
-                    "file": "F:\\repositories\\Apps\\app\\src\\main\\res\\values\\styles.xml",
+                    "file": "F:\\repositories\\Android-Code\\CallBackDemo\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
