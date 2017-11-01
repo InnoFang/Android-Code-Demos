@@ -1,7 +1,7 @@
 package com.innofang.recyclerviewdemo.grid;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
@@ -33,6 +33,7 @@ public class GridActivity extends AppCompatActivity implements OnStartDragListen
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+
 
         ItemTouchHelper.Callback callback = new ItemTouchHelperCallBack(adapter);
         mItemTouchHelper = new ItemTouchHelper(callback);

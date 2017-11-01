@@ -6,9 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
 
 import com.innofang.recyclerviewdemo.R;
 import com.innofang.recyclerviewdemo.adapter.RecyclerAdapter;
+import com.innofang.recyclerviewdemo.helper.OnRecyclerItemClickListener;
 import com.innofang.recyclerviewdemo.mixture.model.DataModelOne;
 import com.innofang.recyclerviewdemo.mixture.model.DataModelThree;
 import com.innofang.recyclerviewdemo.mixture.model.DataModelTwo;
@@ -66,6 +68,17 @@ public class MixtureActivity extends AppCompatActivity {
                         outRect.right = 10;
                     }
                 }
+            }
+        });
+        mRecyclerView.addOnItemTouchListener(new OnRecyclerItemClickListener(mRecyclerView) {
+            @Override
+            public void onItemClick(RecyclerView.ViewHolder vh) {
+                Toast.makeText(MixtureActivity.this, "click" + vh.getAdapterPosition(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onItemLongClick(RecyclerView.ViewHolder vh) {
+
             }
         });
         initData();

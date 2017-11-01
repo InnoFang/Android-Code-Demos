@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mixture.MixtureActivity">
+        <activity android:name="com.innofang.recyclerviewdemo.mixture.MixtureActivity">
         </activity>
-        <activity android:name=".MenuActivity">
+        <activity android:name="com.innofang.recyclerviewdemo.MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".linear.LinearActivity">
+        <activity android:name="com.innofang.recyclerviewdemo.linear.LinearActivity">
         </activity>
-        <activity android:name=".grid.GridActivity">
+        <activity android:name="com.innofang.recyclerviewdemo.grid.GridActivity">
         </activity>
     </application>
 

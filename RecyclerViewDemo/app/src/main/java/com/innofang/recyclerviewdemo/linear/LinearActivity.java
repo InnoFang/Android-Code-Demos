@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LinearActivity extends AppCompatActivity
-        implements OnStartDragListener{
+        implements OnStartDragListener {
 
     private ItemTouchHelper mItemTouchHelper;
 
