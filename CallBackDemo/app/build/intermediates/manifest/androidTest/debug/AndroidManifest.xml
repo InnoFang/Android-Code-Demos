@@ -10,8 +10,8 @@
         android:name="android.support.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.innofang.apps"
-        android:targetPackage="com.innofang.apps" />
+        android:label="Tests for com.innofang.callbackdemo"
+        android:targetPackage="com.innofang.callbackdemo" />
 
     <application>
         <uses-library android:name="android.test.runner" />
