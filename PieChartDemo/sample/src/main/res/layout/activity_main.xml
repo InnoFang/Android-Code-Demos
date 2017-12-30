@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.innofang.piechart.MainActivity">
+
+    <com.innofang.library.PieView
+        android:id="@+id/pie_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:title_gravity="bottom"
+        app:title="学生年龄分布图Hello123"
+        app:titleColor="@color/colorPrimaryDark"
+        app:titleSize="18sp"/>
+</LinearLayout>

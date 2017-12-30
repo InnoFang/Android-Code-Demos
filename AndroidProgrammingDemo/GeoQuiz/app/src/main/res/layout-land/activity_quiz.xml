@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    >
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/question_text_view"
+        android:padding="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical">
+        <Button
+            android:id="@+id/true_button"
+            android:text="@string/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/false_button"
+            android:text="@string/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:text="@string/prev_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prev_button"
+        android:drawableLeft="@drawable/arrow_left"
+        android:drawablePadding="4dp"
+        android:layout_gravity="left|bottom"/>
+
+    <Button
+        android:id="@+id/next_button"
+        android:text="@string/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/arrow_right"
+        android:drawableRight="@drawable/arrow_right"
+        android:drawablePadding="4dp"
+        android:layout_gravity="right|bottom"/>
+
+    <Button
+        android:id="@+id/cheat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cheat_button"
+        android:layout_gravity="center_horizontal|bottom"/>
+    <!--上面next button的两个属性drawableEnd 和 drawableRight，都是将
+    图片加在文字的左边，但是前面那个是给API17以前的用户提供的，所以为了照顾
+    API17之前和之后的用户，这里用了两个属性-->
+
+</FrameLayout>

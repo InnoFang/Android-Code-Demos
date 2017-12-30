@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bright_sun">#FCFCB7</color>
+    <color name="blue_sky">#1E7AC7</color>
+    <color name="sun_set_sky">#EC8100</color>
+    <color name="night_sky">#05192E</color>
+    <color name="sea">#224869</color>
+    <color name="heat_sun">#FFFF0000</color>
+    <color name="cold_sun">#00FF0000</color>
+</resources>
