@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="innofang.io.componentsdemo.user.LoginViewModel"/>
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:hint="@string/login_name"
+            android:text="@={viewmodel.loginName}" />
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:hint="@string/login_password"
+            android:text="@={viewmodel.loginPass}" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/login"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</layout>

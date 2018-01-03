@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ComponentsDemo</string>
+    <string name="login_name">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login">登录</string>
+    <string name="login_name_not_input">用户名不能为空</string>
+    <string name="login_pass_not_input">密码不能为空</string>
+</resources>
