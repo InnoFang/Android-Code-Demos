@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AIDLClient</string>
+    <string name="num1">num1</string>
+    <string name="notation_plus">+</string>
+    <string name="num2">num2</string>
+    <string name="notation_equal">=</string>
+    <string name="result">\?</string>
+    <string name="calculate">Calculate</string>
+    <string name="remote_calculate_by_using_aidl">Remote Calculate By Using AIDL</string>
+    <string name="error">error</string>
+</resources>
