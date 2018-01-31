@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/arrow"
+    >
+
+    <target
+        android:animation="@animator/anim_left"
+        android:name="left"
+        />
+    <target
+        android:animation="@animator/anim_right"
+        android:name="right"
+        />
+
+</animated-vector>
