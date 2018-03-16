@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/enable_visibility"
+        android:title="@string/enable_visibility"/>
+
+    <item
+        android:id="@+id/find_device"
+        android:title="@string/find_device"/>
+
+    <item
+        android:id="@+id/bonded_device"
+        android:title="@string/bonded_device"/>
+</menu>

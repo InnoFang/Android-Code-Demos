@@ -4,4 +4,7 @@
     <string name="is_enable">Is Enable?</string>
     <string name="turn_on">Turn On</string>
     <string name="turn_off">Turn Off</string>
+    <string name="enable_visibility">Enable Visibility</string>
+    <string name="find_device">Find Device</string>
+    <string name="bonded_device">Bonded Device</string>
 </resources>
