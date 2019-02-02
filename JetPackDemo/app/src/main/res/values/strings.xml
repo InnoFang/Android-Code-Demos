@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">JetPackDemo</string>
+    <string name="no_word">No Word</string>
 </resources>
