@@ -5,7 +5,7 @@ import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 import org.jetbrains.annotations.NotNull
 
-@Entity
+@Entity(tableName = "word_table")
 data class Word(
     @PrimaryKey
     @NotNull
