@@ -39,11 +39,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // Room components
     implementation "android.arch.persistence.room:runtime:$rootProject.room_version"
-    annotationProcessor "android.arch.persistence.room:compiler:$rootProject.room_version"
+//    annotationProcessor "android.arch.persistence.room:compiler:$rootProject.room_version"
     androidTestImplementation "android.arch.persistence.room:testing:$rootProject.room_version"
+    kapt "android.arch.persistence.room:compiler:$rootProject.room_version"
     // Lifecycle components
     implementation "android.arch.lifecycle:extensions:$rootProject.arch_life_cycle_version"
-    annotationProcessor "android.arch.lifecycle:compiler:$rootProject.arch_life_cycle_version"
+//    annotationProcessor "android.arch.lifecycle:compiler:$rootProject.arch_life_cycle_version"
+    kapt "android.arch.lifecycle:compiler:$rootProject.arch_life_cycle_version"
+
     implementation "com.android.support:recyclerview-v7:$rootProject.android_support_version"
     implementation "com.android.support:design:$rootProject.android_support_version"
 }

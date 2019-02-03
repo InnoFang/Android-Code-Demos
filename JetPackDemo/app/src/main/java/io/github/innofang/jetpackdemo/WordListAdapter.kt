@@ -11,6 +11,10 @@ class WordListAdapter(val context: Context): RecyclerView.Adapter<WordListAdapte
 
     class WordViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val wordTextView: TextView = itemView.findViewById(R.id.text_view)
+
+        fun bindHolder(word: String) {
+            wordTextView.text = word
+        }
     }
 
     private val layoutInfalter = LayoutInflater.from(context)
@@ -26,12 +30,6 @@ class WordListAdapter(val context: Context): RecyclerView.Adapter<WordListAdapte
     override fun getItemCount(): Int
         = words.size
 
-    override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
-        if (words.isEmpty()) {
-            val current = words[position]
-            holder.wordTextView.text = current.word
-        } else {
-            holder.wordTextView.text = context.getString(R.string.no_word)
-        }
-    }
+    override fun onBindViewHolder(holder: WordViewHolder, position: Int)
+        = holder.bindHolder(words[position].word)
 }
